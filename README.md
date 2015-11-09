@@ -1,7 +1,7 @@
 # abstract-simulator
 
-This repository contains the simulator used to simulate embedded applications described using 
-the Amalthea application model on top of NoC based architecture. The simulator has been validated 
+This repository contains the simulator used to simulate embedded applications described using
+the Amalthea application model on top of NoC based architecture. The simulator has been validated
 using the "toy" applications provided in the apps folder.
 Once you have unzipped the archive provided in this repository, follow the steps below to run a simulation.
 
@@ -107,3 +107,12 @@ optional arguments:
                         choose the runnable to execute
   -x ROWS, --rows ROWS  specify the number of rows in the NoC
   -y COLS, --cols COLS  specify the number of columns in the NoC
+
+## Licence
+
+This software is made available under the Apache Software License. Version 2.0
+
+Report bugs at: dreamcloud-support@lirmm.fr
+
+(C)2015 CNRS LIRMM and University of York
+Adac Group LIRMM and Real-Time System Reasearch Group
