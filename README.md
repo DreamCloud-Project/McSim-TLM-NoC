@@ -7,11 +7,11 @@ Once you have unzipped the archive provided in this repository, follow the steps
 
 ## Directory content
 
-- compile.py
+- compile.py  
 	Compiles the simulator and the energy estimator from the src folder (see using the simulator section below)
 
-- OUTPUT_FILES
-	Default directory where the simulate.py script generates the results of simulation. It contains:
+- OUTPUT_FILES  
+	Default directory where the simulate.py script generates the results of simulation. It contains:  
 		Instruction_fixed_Power.txt - Internal file used by energy estimator
 		Label_accesses_Power.txt - Internal file used by energy estimator
 		Mapping.csv - Runnables to cores mapping location
