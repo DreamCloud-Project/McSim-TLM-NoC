@@ -14,8 +14,9 @@
 #include <sstream>
 #include <string>
 
-#include "../../Platform_Src/dcSimuParams.hxx"
-#include "../../Platform_Src/noc/packet.hxx"
+#include "packet.hxx"
+#include "../dcSimuParams.hxx"
+
 
 ////////////////////
 //      USING     //

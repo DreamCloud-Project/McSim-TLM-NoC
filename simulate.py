@@ -112,6 +112,9 @@ def main():
     out = os.path.dirname(os.path.realpath(__file__)) + DEFAULT_OUTPUT_FOLDER
     if args.output_folder:
         out = args.output_folder
+    if not os.path.exists(out):
+        os.makedirs(out)
+
     sched = DEFAULT_SCHEDULING_STRATEGY
     if args.scheduling_strategy:
         sched = args.scheduling_strategy
@@ -143,7 +146,7 @@ def main():
          my_env['LD_LIBRARY_PATH'] = my_env.get('LD_LIBRARY_PATH', '') + ':' + xerces_home + '/lib'
 
     # Run the simulation
-    cmd = [os.path.dirname(os.path.realpath(__file__)) + '/src/Platform_Src/obj/bin/NoC_PPA', '-i', str(its), '-m', mapping]
+    cmd = [os.path.dirname(os.path.realpath(__file__)) + '/obj/abstract_simulator', '-i', str(its), '-m', mapping]
     if mappingFile:
         cmd.append(mappingFile)
     if mappingSeed:
@@ -186,7 +189,7 @@ def main():
         exit(-1)
 
     # Run the energy estimator module
-    cmd = [os.path.dirname(os.path.realpath(__file__)) + '/src/Energy_Estimator/Power_Multiproc', out, os.path.dirname(os.path.realpath(__file__)) + '/src/Energy_Estimator/']
+    cmd = [os.path.dirname(os.path.realpath(__file__)) + '/obj/energy_estimator', out, os.path.dirname(os.path.realpath(__file__)) + '/src/energy_estimator/']
     nrj = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = nrj.communicate()
     if nrj.wait() != 0:

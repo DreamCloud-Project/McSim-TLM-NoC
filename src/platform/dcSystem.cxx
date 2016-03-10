@@ -7,12 +7,12 @@
 ////////////////////
 //    INCLUDES    //
 ////////////////////
-#include "../Platform_Src/dcSystem.hxx"
+#include "dcSystem.hxx"
 
 #include <fstream>
 #include <utility>
 
-#include "../Platform_Src/simulators-commons/utils/Math.hxx"
+#include "simulators-commons/utils/Math.hxx"
 
 namespace dreamcloud {
 namespace platform_sclib {

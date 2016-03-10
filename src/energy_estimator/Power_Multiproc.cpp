@@ -758,118 +758,6 @@ int main(int argc, char** argv)
   fclose(fp);
   strcpy(Runnable_name,eraser); //clean the Runnable_name buffer;
 
-  //*************************************************************************************************************//
-  //*                                                                                                           *//
-  //*                                   Compute energy consumption of interbuffer Runnables transfers           *//
-  //*                                                                                                           *//
-  //*************************************************************************************************************//
-  //An interbuffer Runnable transfer is a transfer of a Runnable between the different buffers (REB, WRB, PRB) and the cpu. Such transfers happen during preemptions (cpu->REB->cpu) or communication latencies(cpu->WRB->REB->cpu) or periodic execution of Runnables (PRB->cpu).
-
-  /*
-
-  int count = 1;
-  int System[Rows][Columns];
-  for(i=0;i<Rows;i++)
-    {
-      for(j=0;j<Columns;j++)
-	{
-	  System[i][j] = 0;
-	}
-    }
-
-  //fprintf(stderr, "Parsing OUTPUT_CORE_WAVE trace\n");
-
-  //int runn_name = 0;
-  int runn_id = 0;
-  fp = fopen((inputFolder + "/OUTPUT_CORE_WAVE.vcd").c_str(), "r");
-  if(fp == NULL) {
-    perror("OUTPUT_CORE_WAVE.vcd not found in the specified directory");
-    return(-1);
-  }
-
-  //Skip unrelevant lines
-  fgets (line, size_line, fp);
-  sscanf( line, "%c %c",&c1, &c2);
-  while(c1!=35||c2==48)
-    {
-      fgets (line, size_line, fp);
-      sscanf(line, "%c %c",&c1, &c2);
-    }
-
-  //Extract preemptions and compute the energy cost
-  do
-    {
-      sscanf(line, "%*s %s %c %c %c", str, &state, &c1, &c2);
-      if((str[0]==98) && (str[1]!=88))
-	{
-	  // extract runnable_name
-	  while(count<13)
-	    {
-	      if(str[count]==49)
-		{
-		  runn_id = runn_id + pow(2,12-count); 
-		}
-	      count = count +1;
-	    }
-	  Runn_idx = Get_Runnable_idx(Runnables_Name_Idx,Runnables_ID_Name[runn_id]);
-	  count = 1;
-	  if(state == 33)// (!)
-	    {
-	      x = c1-'0';
-	      y = c2-'0';
-	      System[x][y]=Runn_idx; // PE (x,y) is executing runnable runn_idx
-
-	      Tot_energy_preemptions = Tot_energy_preemptions + ((Run_Idx[Runn_idx].Nb_instructions+Run_Idx[Runn_idx].Nb_label_accesses)*Nb_bytes_per_instruction+Nb_bytes_offset)*(Dynamic_energy_read_port_REB);//nJ Start executing a runnable : transfer the runnable from REB to cpu
-	    }
-	}
-	 
-      if(str[0]==49) // (1)
-	{
-	  x = str[2]-'0';
-	  y = str[3]-'0';
-	  if(str[1]==123)//wait on request ({)
-	    {
-	      Runn_idx = System[x][y];
-	      Tot_energy_preemptions = Tot_energy_preemptions + ((Run_Idx[Runn_idx].Nb_instructions+Run_Idx[Runn_idx].Nb_label_accesses)*Nb_bytes_per_instruction+Nb_bytes_offset)*(2*Dynamic_energy_read_port_WRB+Dynamic_energy_read_port_REB);//nJ Wait on request : transfer runnable to WRB then to REB and back to cpu. Assume energy for read and write is the same!
-	    }
-
-	  if(str[1]==91)//preemption ([)
-	    {
-	      Runn_idx = System[x][y];
-	      Tot_energy_preemptions = Tot_energy_preemptions + ((Run_Idx[Runn_idx].Nb_instructions+Run_Idx[Runn_idx].Nb_label_accesses)*Nb_bytes_per_instruction+Nb_bytes_offset)*(Dynamic_energy_read_port_REB);//nJ Preemption : transfer runnable to REB and back to cpu. Assume energy for read and write is the same!
-	    }
-	}
-      runn_id = 0;
-    }while(fgets (line, size_line, fp)!=NULL);
-  fclose(fp);
-
-  */
-
-  /* Energy consumption due to Runnables transfers incurred by hte periodicity of runnables
-  // Runnable transfers due to periodicity of Runnables
-  fp = fopen("./Instruction_fixed_Power.txt" , "r");
-  if(fp == NULL) {
-  perror("Instruction_fixed_Power.txt not found in the specified directory");
-  return(-1);
-  }
-
-  // Read the size of an instruction and compute the energy consumed
-  while(fgets (line, size_line, fp)!=NULL)
-  {
-  sscanf( line, "%s %*c %*d %*c %d %*c %d",Runable_name, &periodic);
-  // Determine Power of the instruction
-  if(periodic)
-  {
-  Runn_idx = Get_Runnable_idx(Runnables_Name_Idx,Runable_name);
-  Tot_energy_preemptions = Tot_energy_preemptions + ((Run_Idx[Runn_idx].Nb_instructions+Run_Idx[Runn_idx].Nb_label_accesses)*Nb_bytes_per_instruction+Nb_bytes_offset)*(Dynamic_energy_read_port_REB);
-  }
-  }
-  fclose(fp);
-  */
-
-
-
-     
 
   //*************************************************************************************************************//
   //*                                                                                                           *//
@@ -923,8 +811,7 @@ int main(int argc, char** argv)
 
     
   // opening file for reading the values of N_clk_flt_link and N_clk_flt_router
-  std::cerr << (configFolder + "/../Platform_Src/src/cxx/modules/dreamcloud/platform_sclib/dcConfiguration.hxx") << std::endl;
-  fp = fopen((configFolder + "/../Platform_Src/src/cxx/modules/dreamcloud/platform_sclib/dcConfiguration.hxx").c_str() , "r");
+  fp = fopen((configFolder + "/../platform/dcConfiguration.hxx").c_str() , "r");
   if(fp == NULL) {
     perror("dcConfiguration.hxx not found in the specified directory");
     return(-1);

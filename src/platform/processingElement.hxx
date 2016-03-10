@@ -15,13 +15,13 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include "../platform/NoC/packet.hxx"
-#include "../Platform_Src/dcConfiguration.hxx"
-#include "../Platform_Src/dcSimuParams.hxx"
-#include "../Platform_Src/processingElementType.hxx"
-#include "../Platform_Src/simulators-commons/parser/dcAmaltheaParser.h"
-#include "../Platform_Src/simulators-commons/parser/dcApplication.h"
-#include "../Platform_Src/simulators-commons/parser/dcRunnableInstance.h"
+#include "noc/packet.hxx"
+#include "dcConfiguration.hxx"
+#include "dcSimuParams.hxx"
+#include "processingElementType.hxx"
+#include "simulators-commons/parser/dcAmaltheaParser.h"
+#include "simulators-commons/parser/dcApplication.h"
+#include "simulators-commons/parser/dcRunnableInstance.h"
 
 namespace dreamcloud {
 namespace platform_sclib {

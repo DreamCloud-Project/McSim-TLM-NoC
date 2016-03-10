@@ -7,7 +7,7 @@
 ////////////////////
 //    INCLUDES    //
 ////////////////////
-#include "../../Platform_Src/noc/packet.hxx"
+#include "packet.hxx"
 
 namespace dreamcloud { namespace platform_sclib { namespace noc_ppa {
 
