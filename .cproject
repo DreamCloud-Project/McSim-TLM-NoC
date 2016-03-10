@@ -135,7 +135,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="Platform_Src/obj|Energy_Estimator|Platform_Src/src/cxx/modules/dreamcloud/utilities_clib" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
+						<entry excluding="Platform_Src/obj|Platform_Src/src/cxx/modules/dreamcloud/utilities_clib|energy_estimator" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

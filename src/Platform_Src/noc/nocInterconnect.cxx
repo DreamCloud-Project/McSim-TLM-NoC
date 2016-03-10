@@ -7,10 +7,12 @@
 ////////////////////
 //    INCLUDES    //
 ////////////////////
-#include "nocInterconnect.hxx"
-#include "../dcConfiguration.hxx"
-#include "../simulators-commons/utils/dcVector.hxx"
-#include "../simulators-commons/utils/Math.hxx"
+#include "../../Platform_Src/noc/nocInterconnect.hxx"
+
+#include "../../Platform_Src/dcConfiguration.hxx"
+#include "../../Platform_Src/dcConfiguration.hxx"
+#include "../../Platform_Src/simulators-commons/utils/dcVector.hxx"
+#include "../../Platform_Src/simulators-commons/utils/Math.hxx"
 
 #define DBG_NOC( x ) //
 

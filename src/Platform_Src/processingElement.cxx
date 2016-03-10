@@ -7,10 +7,12 @@
 ////////////////////
 //    INCLUDES    //
 ////////////////////
-#include "processingElement.hxx"
-#include "NoC/nocInterconnect.hxx"
+#include "../Platform_Src/processingElement.hxx"
+
 #include <math.h> 
 #include <bitset>
+
+#include "../Platform_Src/noc/nocInterconnect.hxx"
 
 ////////////////////
 //      USING     //

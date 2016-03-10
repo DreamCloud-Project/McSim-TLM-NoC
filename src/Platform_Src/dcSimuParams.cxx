@@ -1,4 +1,5 @@
-#include "dcSimuParams.hxx"
+#include "../Platform_Src/dcSimuParams.hxx"
+
 #include <algorithm>
 #include <iostream>
 #include <fstream>

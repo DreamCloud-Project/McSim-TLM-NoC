@@ -7,8 +7,8 @@
 ////////////////////
 //    INCLUDES    //
 ////////////////////
-#include "dcSystem.hxx"
-#include "dcSimuParams.hxx"
+#include "../Platform_Src/dcSimuParams.hxx"
+#include "../Platform_Src/dcSystem.hxx"
 
 ////////////////////
 //      USING     //

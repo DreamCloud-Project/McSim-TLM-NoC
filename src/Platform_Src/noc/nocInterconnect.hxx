@@ -10,11 +10,12 @@
 ////////////////////
 //    INCLUDES    //
 ////////////////////
-#include "packet.hxx"
-#include "../dcSimuParams.hxx"
 #include <map>
 #include <sstream>
 #include <string>
+
+#include "../../Platform_Src/dcSimuParams.hxx"
+#include "../../Platform_Src/noc/packet.hxx"
 
 ////////////////////
 //      USING     //

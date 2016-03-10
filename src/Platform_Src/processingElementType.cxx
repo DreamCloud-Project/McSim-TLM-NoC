@@ -5,7 +5,7 @@
  *      Author: manu
  */
 
-#include "processingElementType.hxx"
+#include "../Platform_Src/processingElementType.hxx"
 
 namespace dreamcloud {
 namespace platform_sclib {
