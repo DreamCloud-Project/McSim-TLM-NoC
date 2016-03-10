@@ -27,7 +27,7 @@ APP_NAMES_TO_FILES = {
  'DC'  : '/apps/DEMO_CAR/DemoCar-PowerUp.amxmi'
 }
 
-MAPPINGS = ['KhalidDC', 'MinComm', 'Static', 'StaticSM', 'ZigZag', 'ZigZagSM', '3Core', 'Random', 'StaticModes', 'Weka']
+MAPPINGS = ['MinComm', 'Static', 'ZigZag', 'Random', 'StaticModes']
 
 class ValidateMapping(argparse.Action):
     def __call__(self, parser, args, values, option_string=None):
@@ -70,7 +70,7 @@ class ValidateFreq(argparse.Action):
 def main():
     ''' Run the abstract simulator '''
     # Configure parameters parser
-    parser = argparse.ArgumentParser(description='Abstract Simulator Runner script')
+    parser = argparse.ArgumentParser(description='Abstract simulator runner script')
     parser.add_argument('-d', '--syntax_dependency', action='store_true', help='consider successive runnables in tasks call graph as dependent')
     appGroup = parser.add_mutually_exclusive_group()
     appGroup.add_argument('-da', '--def_application', help='specify the application to be simulated among the default ones', choices=['DC'])
@@ -89,7 +89,6 @@ def main():
     parser.add_argument('-x', '--rows', type=int, help='specify the number of rows in the NoC')
     parser.add_argument('-y', '--cols', type=int, help='specify the number of columns in the NoC')
     parser.add_argument('-ba', '--built_in_analyses', action='store_true', help='generate graphs for built in analyzes about NoC links and cores utilization')
-    parser.add_argument('-wf', '--wekaFile', help='the file containing list of runnables from weka')
 
     # Get parameters
     args = parser.parse_args()

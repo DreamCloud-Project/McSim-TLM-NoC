@@ -52,13 +52,17 @@ The requirements for using both script are the following ones:
 Compilation is done through the compile.py script which documentation is the following:  
 
 ```
->> compile.py build -h  
-usage: compile.py build [-h] [-c] [-v]
+>> ./compile.py --help
+usage: compile.py [-h] [-v] {build,clean} ...
 
-optional arguments:  
-  -h, --help     show this help message and exit  
-  -c, --clean    clean previously compiled files before compiling  
-  -v, --verbose  enable verbose output  
+Abstract simulator compiler script
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -v, --verbose  enable verbose output
+
+valid subcommands:
+  {build,clean}  
 ```
 
 ### Running the simulator
@@ -70,43 +74,56 @@ scheduling and without repeating periodic runnables.  You can play
 with all these parameters which documentation is the following:
 
 ```
->> ./simulate.py -h  
-usage: simulate.py [-h] [-d]  
-                   [-da {DC,CSE} | -ca CUSTOM_APPLICATION | -mf MODES_FILE]  
-                   [-i ITERATIONS] [-m {ZigZag,MinComm,KhalidDC}]  
-                   [-o OUTPUT_FOLDER] [-s {fcfs,prio}] [-x ROWS] [-y COLS]
+>> ./simulate.py --help
+usage: simulate.py [-h] [-d] [-da {DC}] [-ca CUSTOM_APPLICATION] [-f FREQ]
+                   [-mf MODES_FILE] [-i ITERATIONS]
+                   [-m MAPPING_STRATEGY [MAPPING_STRATEGY ...]] [-np] [-nfd]
+                   [-o OUTPUT_FOLDER] [-r] [-seed SEED_RANDOM]
+                   [-s {fcfs,prio}] [-v] [-x ROWS] [-y COLS] [-ba]
 
-Abstract Simulator Runner script  
+Abstract simulator runner script
 
-optional arguments:  
-  -h, --help            show this help message and exit  
-  -d, --syntax_dependency  
-                        consider successive runnables in tasks call graph as  
-                        dependent  
-  -da {DC,CSE}, --def_application {DC,CSE}  
-                        specify the application to be simulated among the  
-                        default ones  
-  -ca CUSTOM_APPLICATION, --custom_application CUSTOM_APPLICATION  
-                        specify a custom application file to be simulated  
-  -fd, --full_duplex    use a full duplex NoC  
-  -mf MODES_FILE, --modes_file MODES_FILE  
-                        specify a modes switching file to be simulated  
-  -i ITERATIONS, --iterations ITERATIONS  
-                        specify the number of application to execute (has no  
-                        effect with -p)  
-  -m {ZigZag,MinComm,KhalidDC,3Core}, --mapping_strategy {ZigZag,MinComm,KhalidDC,3Core}  
-                        specify the mapping strategy used to map runnables on  
-                        cores  
-  -np, --no_periodicity  
-                        run periodic runnables only once  
-  -o OUTPUT_FOLDER, --output_folder OUTPUT_FOLDER  
-                        specify the absolute path of the output folder where  
-                        simulation results will be generated  
-  -s {fcfs,prio}, --scheduling_strategy {fcfs,prio}  
-                        specify the scheduling strategy used by cores to  
-                        choose the runnable to execute  
-  -x ROWS, --rows ROWS  specify the number of rows in the NoC  
-  -y COLS, --cols COLS  specify the number of columns in the NoC  
+optional arguments:
+  -h, --help            show this help message and exit
+  -d, --syntax_dependency
+                        consider successive runnables in tasks call graph as
+                        dependent
+  -da {DC}, --def_application {DC}
+                        specify the application to be simulated among the
+                        default ones
+  -ca CUSTOM_APPLICATION, --custom_application CUSTOM_APPLICATION
+                        specify a custom application file to be simulated
+  -f FREQ, --freq FREQ  specify the frequency of cores in the NoC (i.g 400MHz
+                        or 1GHz)
+  -mf MODES_FILE, --modes_file MODES_FILE
+                        specify a modes switching file to be simulated
+  -i ITERATIONS, --iterations ITERATIONS
+                        specify the number of application to execute (has no
+                        effect with -p)
+  -m MAPPING_STRATEGY [MAPPING_STRATEGY ...], --mapping_strategy MAPPING_STRATEGY [MAPPING_STRATEGY ...]
+                        specify the mapping strategy used to map runnables on
+                        cores. Valide strategies are ['MinComm', 'Static',
+                        'ZigZag', 'Random', 'StaticModes']
+  -np, --no_periodicity
+                        run periodic runnables only once
+  -nfd, --no_full_duplex
+                        don't use a full duplex NoC
+  -o OUTPUT_FOLDER, --output_folder OUTPUT_FOLDER
+                        specify the absolute path of the output folder where
+                        simulation results will be generated
+  -r, --random          replace constant seed used to generate distributions
+                        by a random one based on the time
+  -seed SEED_RANDOM, --seed_random SEED_RANDOM
+                        the seed
+  -s {fcfs,prio}, --scheduling_strategy {fcfs,prio}
+                        specify the scheduling strategy used by cores to
+                        choose the runnable to execute
+  -v, --verbose         enable verbose output
+  -x ROWS, --rows ROWS  specify the number of rows in the NoC
+  -y COLS, --cols COLS  specify the number of columns in the NoC
+  -ba, --built_in_analyses
+                        generate graphs for built in analyzes about NoC links
+                        and cores utilization
 ```
 
 ## Licence

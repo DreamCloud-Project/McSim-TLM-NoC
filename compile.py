@@ -9,7 +9,7 @@ def main():
     ''' Compile the cycle accurate simulator '''
 
     # Configure parameters parser
-    parser = argparse.ArgumentParser(description='Cycle Accurate Simulator Compiler script')
+    parser = argparse.ArgumentParser(description='Abstract simulator compiler script')
     parser.add_argument('-v',  '--verbose', action='store_true', help='enable verbose output')
     subparsers = parser.add_subparsers(title='valid subcommands', dest='command')
     parser_cp = subparsers.add_parser('build')
