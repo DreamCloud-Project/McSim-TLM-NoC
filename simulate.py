@@ -24,8 +24,7 @@ FREQ_UNITS = {
 }
 
 APP_NAMES_TO_FILES = {
- 'DC'  : '/apps/DEMO_CAR/DemoCar-PowerUp.amxmi',
- 'CSE' : '/apps/CONTROL_SYSTEM_ENGINE.amxmi',
+ 'DC'  : '/apps/DEMO_CAR/DemoCar-PowerUp.amxmi'
 }
 
 MAPPINGS = ['KhalidDC', 'MinComm', 'Static', 'StaticSM', 'ZigZag', 'ZigZagSM', '3Core', 'Random', 'StaticModes', 'Weka']
@@ -74,7 +73,7 @@ def main():
     parser = argparse.ArgumentParser(description='Abstract Simulator Runner script')
     parser.add_argument('-d', '--syntax_dependency', action='store_true', help='consider successive runnables in tasks call graph as dependent')
     appGroup = parser.add_mutually_exclusive_group()
-    appGroup.add_argument('-da', '--def_application', help='specify the application to be simulated among the default ones', choices=['DC','CSE'])
+    appGroup.add_argument('-da', '--def_application', help='specify the application to be simulated among the default ones', choices=['DC'])
     appGroup.add_argument('-ca', '--custom_application', help='specify a custom application file to be simulated')
     parser.add_argument('-f', '--freq', help='specify the frequency of cores in the NoC (i.g 400MHz or 1GHz)', action=ValidateFreq)
     appGroup.add_argument('-mf', '--modes_file', help='specify a modes switching file to be simulated')
