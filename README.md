@@ -41,8 +41,9 @@ To ease the usage of the simulator, two python scripts are provided:
 - compile.py for compilation  
 - simulate.py for launching the simulation  
 
-The requirements for using both script are the following ones:  
+The requirements for using these scripts are the following ones:  
 
+- have CMake installed on your system [https://cmake.org/](https://cmake.org/)
 - define the SYSTEMC_HOME variable pointing to a SystemC 2.3.1 root folder
 - have the xerces-c-dev library installed in standard includes and libs folders (using apt-get for example)
   or have xerces-c-dev library in a custom folder and define XERCES_HOME
