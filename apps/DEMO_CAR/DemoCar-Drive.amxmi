@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<central:AMALTHEA xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:central="http://www.amalthea.itea2.org/model/1.1.0/central" xmlns:common="http://www.amalthea.itea2.org/model/1.1.0/common" xmlns:events="http://www.amalthea.itea2.org/model/1.1.0/events" xmlns:hw="http://www.amalthea.itea2.org/model/1.1.0/hw" xmlns:mapping="http://www.amalthea.itea2.org/model/1.1.0/mapping" xmlns:os="http://www.amalthea.itea2.org/model/1.1.0/os" xmlns:stimuli="http://www.amalthea.itea2.org/model/1.1.0/stimuli" xmlns:sw="http://www.amalthea.itea2.org/model/1.1.0/sw" xmi:id="_xVgosJvmEeSm4K_ObLCveQ">
+  <swModel xmi:id="_xVgosZvmEeSm4K_ObLCveQ">
+    <tasks xmi:id="_xVgospvmEeSm4K_ObLCveQ" name="ISR_Rte_Tick" priority="1" stimuli="_xVieC5vmEeSm4K_ObLCveQ" preemption="preemptive" multipleTaskActivationLimit="2">
+      <customProperties xmi:id="_xVgos5vmEeSm4K_ObLCveQ" key="scheduleType">
+        <value xsi:type="common:StringObject" xmi:id="_xVgotJvmEeSm4K_ObLCveQ" value="unknown"/>
+      </customProperties>
+      <deadline xmi:id="_xVgotZvmEeSm4K_ObLCveQ" value="5" unit="ms"/>
+      <callGraph xmi:id="_xVgotpvmEeSm4K_ObLCveQ">
+        <graphEntries xsi:type="sw:CallSequence" xmi:id="_xVgot5vmEeSm4K_ObLCveQ" name="CS_ISR_Rte_Tick">
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVgouJvmEeSm4K_ObLCveQ" runnable="_xVhP2pvmEeSm4K_ObLCveQ"/>
+        </graphEntries>
+      </callGraph>
+    </tasks>
+    <tasks xmi:id="_xVgouZvmEeSm4K_ObLCveQ" name="CylNumTriggeredTask" priority="30" stimuli="_xVieC5vmEeSm4K_ObLCveQ" preemption="preemptive" multipleTaskActivationLimit="2">
+      <customProperties xmi:id="_xVgoupvmEeSm4K_ObLCveQ" key="scheduleType">
+        <value xsi:type="common:StringObject" xmi:id="_xVgou5vmEeSm4K_ObLCveQ" value="unknown"/>
+      </customProperties>
+      <deadline xmi:id="_xVgovJvmEeSm4K_ObLCveQ" value="5" unit="ms"/>
+      <callGraph xmi:id="_xVgovZvmEeSm4K_ObLCveQ">
+        <graphEntries xsi:type="sw:CallSequence" xmi:id="_xVgovpvmEeSm4K_ObLCveQ" name="CS_CylNumTriggeredTask">
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVgov5vmEeSm4K_ObLCveQ" runnable="_xVhP3JvmEeSm4K_ObLCveQ"/>
+        </graphEntries>
+      </callGraph>
+    </tasks>
+    <tasks xmi:id="_xVgowJvmEeSm4K_ObLCveQ" name="ActuatorTask" priority="25" stimuli="_xVieC5vmEeSm4K_ObLCveQ" preemption="preemptive" multipleTaskActivationLimit="2">
+      <customProperties xmi:id="_xVgowZvmEeSm4K_ObLCveQ" key="scheduleType">
+        <value xsi:type="common:StringObject" xmi:id="_xVgowpvmEeSm4K_ObLCveQ" value="unknown"/>
+      </customProperties>
+      <deadline xmi:id="_xVgow5vmEeSm4K_ObLCveQ" value="5" unit="ms"/>
+      <callGraph xmi:id="_xVgoxJvmEeSm4K_ObLCveQ">
+        <graphEntries xsi:type="sw:CallSequence" xmi:id="_xVgoxZvmEeSm4K_ObLCveQ" name="CS_ActuatorTask">
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVgoxpvmEeSm4K_ObLCveQ" runnable="_xVhP5JvmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVgox5vmEeSm4K_ObLCveQ" runnable="_xVhQB5vmEeSm4K_ObLCveQ"/>
+        </graphEntries>
+      </callGraph>
+    </tasks>
+    <tasks xmi:id="_xVgoyJvmEeSm4K_ObLCveQ" name="ComProxy" priority="22" stimuli="_xVieEJvmEeSm4K_ObLCveQ" preemption="preemptive" multipleTaskActivationLimit="2">
+      <customProperties xmi:id="_xVgoyZvmEeSm4K_ObLCveQ" key="scheduleType">
+        <value xsi:type="common:StringObject" xmi:id="_xVgoypvmEeSm4K_ObLCveQ" value="unknown"/>
+      </customProperties>
+      <deadline xmi:id="_xVgoy5vmEeSm4K_ObLCveQ" value="5" unit="ms"/>
+      <callGraph xmi:id="_xVgozJvmEeSm4K_ObLCveQ"/>
+    </tasks>
+    <tasks xmi:id="_xVgozZvmEeSm4K_ObLCveQ" name="Task5ms" priority="20" stimuli="_xVieE5vmEeSm4K_ObLCveQ" preemption="preemptive" multipleTaskActivationLimit="2">
+      <customProperties xmi:id="_xVgozpvmEeSm4K_ObLCveQ" key="scheduleType">
+        <value xsi:type="common:StringObject" xmi:id="_xVgoz5vmEeSm4K_ObLCveQ" value="unknown"/>
+      </customProperties>
+      <deadline xmi:id="_xVgo0JvmEeSm4K_ObLCveQ" value="5" unit="ms"/>
+      <callGraph xmi:id="_xVgo0ZvmEeSm4K_ObLCveQ">
+        <graphEntries xsi:type="sw:CallSequence" xmi:id="_xVgo0pvmEeSm4K_ObLCveQ" name="CS_Task5ms">
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVgo05vmEeSm4K_ObLCveQ" runnable="_xVhQMJvmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVgo1JvmEeSm4K_ObLCveQ" runnable="_xVhQOJvmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVgo1ZvmEeSm4K_ObLCveQ" runnable="_xVhQRpvmEeSm4K_ObLCveQ"/>
+        </graphEntries>
+      </callGraph>
+    </tasks>
+    <tasks xmi:id="_xVgo1pvmEeSm4K_ObLCveQ" name="Task10ms" priority="15" stimuli="_xVieFpvmEeSm4K_ObLCveQ" preemption="preemptive" multipleTaskActivationLimit="2">
+      <customProperties xmi:id="_xVgo15vmEeSm4K_ObLCveQ" key="scheduleType">
+        <value xsi:type="common:StringObject" xmi:id="_xVgo2JvmEeSm4K_ObLCveQ" value="unknown"/>
+      </customProperties>
+      <deadline xmi:id="_xVgo2ZvmEeSm4K_ObLCveQ" value="5" unit="ms"/>
+      <callGraph xmi:id="_xVhPwJvmEeSm4K_ObLCveQ">
+        <graphEntries xsi:type="sw:CallSequence" xmi:id="_xVhPwZvmEeSm4K_ObLCveQ" name="CS_Task10ms">
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhPwpvmEeSm4K_ObLCveQ" runnable="_xVhQVJvmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhPw5vmEeSm4K_ObLCveQ" runnable="_xVhQX5vmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhPxJvmEeSm4K_ObLCveQ" runnable="_xVhQdpvmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhPxZvmEeSm4K_ObLCveQ" runnable="_xVhQfpvmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhPxpvmEeSm4K_ObLCveQ" runnable="_xVhQlZvmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhPx5vmEeSm4K_ObLCveQ" runnable="_xVhQuJvmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhPyJvmEeSm4K_ObLCveQ" runnable="_xVhQ4ZvmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhPyZvmEeSm4K_ObLCveQ" runnable="_xVh21ZvmEeSm4K_ObLCveQ"/>
+        </graphEntries>
+      </callGraph>
+    </tasks>
+    <tasks xmi:id="_xVhPypvmEeSm4K_ObLCveQ" name="Task20ms" priority="10" stimuli="_xVieGZvmEeSm4K_ObLCveQ" preemption="preemptive" multipleTaskActivationLimit="2">
+      <customProperties xmi:id="_xVhPy5vmEeSm4K_ObLCveQ" key="scheduleType">
+        <value xsi:type="common:StringObject" xmi:id="_xVhPzJvmEeSm4K_ObLCveQ" value="unknown"/>
+      </customProperties>
+      <deadline xmi:id="_xVhPzZvmEeSm4K_ObLCveQ" value="5" unit="ms"/>
+      <callGraph xmi:id="_xVhPzpvmEeSm4K_ObLCveQ">
+        <graphEntries xsi:type="sw:CallSequence" xmi:id="_xVhPz5vmEeSm4K_ObLCveQ" name="CS_Task20ms">
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhP0JvmEeSm4K_ObLCveQ" runnable="_xVh27JvmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhP0ZvmEeSm4K_ObLCveQ" runnable="_xVh3G5vmEeSm4K_ObLCveQ"/>
+        </graphEntries>
+      </callGraph>
+    </tasks>
+    <tasks xmi:id="_xVhP0pvmEeSm4K_ObLCveQ" name="Task100ms" priority="5" stimuli="_xVieHJvmEeSm4K_ObLCveQ" preemption="preemptive" multipleTaskActivationLimit="2">
+      <customProperties xmi:id="_xVhP05vmEeSm4K_ObLCveQ" key="scheduleType">
+        <value xsi:type="common:StringObject" xmi:id="_xVhP1JvmEeSm4K_ObLCveQ" value="unknown"/>
+      </customProperties>
+      <deadline xmi:id="_xVhP1ZvmEeSm4K_ObLCveQ" value="5" unit="ms"/>
+      <callGraph xmi:id="_xVhP1pvmEeSm4K_ObLCveQ">
+        <graphEntries xsi:type="sw:CallSequence" xmi:id="_xVhP15vmEeSm4K_ObLCveQ" name="CS_Task100ms">
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhP2JvmEeSm4K_ObLCveQ" runnable="_xVh3L5vmEeSm4K_ObLCveQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_xVhP2ZvmEeSm4K_ObLCveQ" runnable="_xVh3N5vmEeSm4K_ObLCveQ"/>
+        </graphEntries>
+      </callGraph>
+    </tasks>
+    <runnables xmi:id="_xVhP2pvmEeSm4K_ObLCveQ" name="ISR_Process">
+      <size xmi:id="_qHhEoKYxEeS1L6p7uqC6pA" numberBits="5592"/>
+    </runnables>
+    <runnables xmi:id="_xVhP3JvmEeSm4K_ObLCveQ" name="CylNumObserverRunnableEntity">
+      <size xmi:id="_xVhP3ZvmEeSm4K_ObLCveQ" numberBits="55600"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP3pvmEeSm4K_ObLCveQ" data="_xVh3Q5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhP35vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhP4JvmEeSm4K_ObLCveQ" value="3.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP4ZvmEeSm4K_ObLCveQ" data="_xVh3QZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhP4pvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhP45vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_EDQ-kKMJEeS1L6p7uqC6pA">
+        <deviation xmi:id="_FH32MKMJEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_Io9XUKMJEeS1L6p7uqC6pA" value="434"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_MKVMUKMJEeS1L6p7uqC6pA" value="1145"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhP5JvmEeSm4K_ObLCveQ" name="IgnitionSWCSyncRunnableEntity">
+      <size xmi:id="_xVhP5ZvmEeSm4K_ObLCveQ" numberBits="72512"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP5pvmEeSm4K_ObLCveQ" data="_xVh3U5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhP55vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhP6JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP6ZvmEeSm4K_ObLCveQ" data="_xVh3T5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhP6pvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhP65vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP7JvmEeSm4K_ObLCveQ" data="_xVh3QZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhP7ZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhP7pvmEeSm4K_ObLCveQ" value="2.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP75vmEeSm4K_ObLCveQ" data="_xVh3V5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhP8JvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhP8ZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP8pvmEeSm4K_ObLCveQ" data="_xVh3WZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhP85vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhP9JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP9ZvmEeSm4K_ObLCveQ" data="_xVh3W5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhP9pvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhP95vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP-JvmEeSm4K_ObLCveQ" data="_xVh3XZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhP-ZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhP-pvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP-5vmEeSm4K_ObLCveQ" data="_xVh3X5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhP_JvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhP_ZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhP_pvmEeSm4K_ObLCveQ" data="_xVh3YZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhP_5vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQAJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQAZvmEeSm4K_ObLCveQ" data="_xVh3Y5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQApvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQA5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQBJvmEeSm4K_ObLCveQ" data="_xVh3ZZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQBZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQBpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_WUQpsKMJEeS1L6p7uqC6pA">
+        <deviation xmi:id="_W1j_8KMJEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_XKUvAKMJEeS1L6p7uqC6pA" value="2728"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_baLaoKMJEeS1L6p7uqC6pA" value="4921"/>
+          <distribution xsi:type="common:GaussDistribution" xmi:id="_vY2pwK00EeSo9v5VL61Acg"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQB5vmEeSm4K_ObLCveQ" name="InjectionSWCSyncRunnable">
+      <size xmi:id="_xVhQCJvmEeSm4K_ObLCveQ" numberBits="69824"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQCZvmEeSm4K_ObLCveQ" data="_xVh3d5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQCpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQC5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQDJvmEeSm4K_ObLCveQ" data="_xVh3gZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQDZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQDpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQD5vmEeSm4K_ObLCveQ" data="_xVh3QZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQEJvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQEZvmEeSm4K_ObLCveQ" value="2.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQEpvmEeSm4K_ObLCveQ" data="_xVh3T5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQE5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQFJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQFZvmEeSm4K_ObLCveQ" data="_xVh3m5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQFpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQF5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQGJvmEeSm4K_ObLCveQ" data="_xVh3Z5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQGZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQGpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQG5vmEeSm4K_ObLCveQ" data="_xVh3aZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQHJvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQHZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQHpvmEeSm4K_ObLCveQ" data="_xVh3a5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQH5vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQIJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQIZvmEeSm4K_ObLCveQ" data="_xVh3bZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQIpvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQI5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQJJvmEeSm4K_ObLCveQ" data="_xVh3b5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQJZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQJpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQJ5vmEeSm4K_ObLCveQ" data="_xVh3cZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQKJvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQKZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQKpvmEeSm4K_ObLCveQ" data="_xVh3c5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQK5vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQLJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQLZvmEeSm4K_ObLCveQ" data="_xVh3dZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQLpvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQL5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_hPj5oKMJEeS1L6p7uqC6pA">
+        <deviation xmi:id="_hui7sKMJEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_iB7KsKMJEeS1L6p7uqC6pA" value="1644"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_kQ6KwKMJEeS1L6p7uqC6pA" value="3302"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQMJvmEeSm4K_ObLCveQ" name="MassAirFlowSWCRunnableEntity">
+      <size xmi:id="_xVhQMZvmEeSm4K_ObLCveQ" numberBits="56608"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQMpvmEeSm4K_ObLCveQ" data="_xVh3nZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQM5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQNJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQNZvmEeSm4K_ObLCveQ" data="_xVh3n5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQNpvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQN5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_o2ufUKMJEeS1L6p7uqC6pA">
+        <deviation xmi:id="_pO5uwKMJEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_piqYQKMJEeS1L6p7uqC6pA" value="55"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_rRht0KMJEeS1L6p7uqC6pA" value="172"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQOJvmEeSm4K_ObLCveQ" name="ThrottleSensSWCRunnableEntity">
+      <size xmi:id="_xVhQOZvmEeSm4K_ObLCveQ" numberBits="58816"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQOpvmEeSm4K_ObLCveQ" data="_xVh3o5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQO5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQPJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQPZvmEeSm4K_ObLCveQ" data="_xVh3pZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQPpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQP5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQQJvmEeSm4K_ObLCveQ" data="_xVh3p5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQQZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQQpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQQ5vmEeSm4K_ObLCveQ" data="_xVh3qZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQRJvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQRZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_v_XV8KMJEeS1L6p7uqC6pA">
+        <deviation xmi:id="_wZcp4KMJEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_wvpjYKMJEeS1L6p7uqC6pA" value="113"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_ypVo4KMJEeS1L6p7uqC6pA" value="377"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQRpvmEeSm4K_ObLCveQ" name="APedSensorRunnable">
+      <size xmi:id="_xVhQR5vmEeSm4K_ObLCveQ" numberBits="66288"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQSJvmEeSm4K_ObLCveQ" data="_xVh3RZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQSZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQSpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQS5vmEeSm4K_ObLCveQ" data="_xVh3R5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQTJvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQTZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQTpvmEeSm4K_ObLCveQ" data="_xVh3SZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQT5vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQUJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQUZvmEeSm4K_ObLCveQ" data="_xVh3S5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQUpvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQU5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_1oKxgKMJEeS1L6p7uqC6pA">
+        <deviation xmi:id="_2FdKcKMJEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_2hipgKMJEeS1L6p7uqC6pA" value="555"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_JwDFwKMKEeS1L6p7uqC6pA" value="964"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_C12TwKMKEeS1L6p7uqC6pA"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQVJvmEeSm4K_ObLCveQ" name="APedVoterSWCRunnableEntity">
+      <size xmi:id="_xVhQVZvmEeSm4K_ObLCveQ" numberBits="56832"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQVpvmEeSm4K_ObLCveQ" data="_xVh3SZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQV5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQWJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQWZvmEeSm4K_ObLCveQ" data="_xVh3S5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQWpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQW5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQXJvmEeSm4K_ObLCveQ" data="_xVh3TZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQXZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQXpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_XSn58KMKEeS1L6p7uqC6pA">
+        <deviation xmi:id="_XsfygKMKEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_YBFicKMKEeS1L6p7uqC6pA" value="87"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_Z_rWEKMKEeS1L6p7uqC6pA" value="287"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQX5vmEeSm4K_ObLCveQ" name="ThrottleCtlrRunnableEntity">
+      <size xmi:id="_xVhQYJvmEeSm4K_ObLCveQ" numberBits="66464"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQYZvmEeSm4K_ObLCveQ" data="_xVh3gZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQYpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQY5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQZJvmEeSm4K_ObLCveQ" data="_xVh3T5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQZZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQZpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQZ5vmEeSm4K_ObLCveQ" data="_xVh3r5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQaJvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQaZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQapvmEeSm4K_ObLCveQ" data="_xVh3sZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQa5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQbJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQbZvmEeSm4K_ObLCveQ" data="_xVh3UZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQbpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQb5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQcJvmEeSm4K_ObLCveQ" data="_xVh3TZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQcZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQcpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQc5vmEeSm4K_ObLCveQ" data="_xVh3s5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQdJvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQdZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_NlAvsKMLEeS1L6p7uqC6pA">
+        <deviation xmi:id="_OA8dwKMLEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_OyE_wKMLEeS1L6p7uqC6pA" value="3079"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_Sl2zYKMLEeS1L6p7uqC6pA" value="4309"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQdpvmEeSm4K_ObLCveQ" name="ThrottleActuatorRunnableEntity">
+      <size xmi:id="_xVhQd5vmEeSm4K_ObLCveQ" numberBits="56928"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQeJvmEeSm4K_ObLCveQ" data="_xVh3s5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQeZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQepvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQe5vmEeSm4K_ObLCveQ" data="_xVh3tZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQfJvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQfZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_Y5Ym8KMLEeS1L6p7uqC6pA">
+        <deviation xmi:id="_ZWTMcKMLEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_Zq5jcKMLEeS1L6p7uqC6pA" value="1114"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_bPOc8KMLEeS1L6p7uqC6pA" value="2384"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQfpvmEeSm4K_ObLCveQ" name="BaseFuelMassRunnableEntity">
+      <size xmi:id="_xVhQf5vmEeSm4K_ObLCveQ" numberBits="70944"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQgJvmEeSm4K_ObLCveQ" data="_xVh3t5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQgZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQgpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQg5vmEeSm4K_ObLCveQ" data="_xVh3T5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQhJvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQhZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQhpvmEeSm4K_ObLCveQ" data="_xVh3n5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQh5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQiJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQiZvmEeSm4K_ObLCveQ" data="_xVh3p5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQipvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQi5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQjJvmEeSm4K_ObLCveQ" data="_xVh3qZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQjZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQjpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQj5vmEeSm4K_ObLCveQ" data="_xVh3eZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQkJvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQkZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQkpvmEeSm4K_ObLCveQ" data="_xVh3oZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQk5vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQlJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_ZtjZYKMMEeS1L6p7uqC6pA">
+        <deviation xmi:id="_bUs9YKMMEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_bv4dgKMMEeS1L6p7uqC6pA" value="3664"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_dtO7AKMMEeS1L6p7uqC6pA" value="5783"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQlZvmEeSm4K_ObLCveQ" name="ThrottleChangeSWCRunnableEntity">
+      <size xmi:id="_xVhQlpvmEeSm4K_ObLCveQ" numberBits="128464"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQl5vmEeSm4K_ObLCveQ" data="_xVh3t5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQmJvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQmZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQmpvmEeSm4K_ObLCveQ" data="_xVh3gZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQm5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQnJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQnZvmEeSm4K_ObLCveQ" data="_xVh3s5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQnpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQn5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQoJvmEeSm4K_ObLCveQ" data="_xVh3T5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQoZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQopvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQo5vmEeSm4K_ObLCveQ" data="_xVh3g5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQpJvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQpZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQppvmEeSm4K_ObLCveQ" data="_xVh3uZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQp5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQqJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQqZvmEeSm4K_ObLCveQ" data="_xVh3hZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQqpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQq5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQrJvmEeSm4K_ObLCveQ" data="_xVh3jZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQrZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQrpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQr5vmEeSm4K_ObLCveQ" data="_xVh3sZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQsJvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQsZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQspvmEeSm4K_ObLCveQ" data="_xVh3q5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQs5vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQtJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQtZvmEeSm4K_ObLCveQ" data="_xVh3rZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQtpvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQt5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_gUssgKMMEeS1L6p7uqC6pA">
+        <deviation xmi:id="_g3t6AKMMEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_hQ5PAKMMEeS1L6p7uqC6pA" value="3788"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_j89MoKMMEeS1L6p7uqC6pA" value="5913"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQuJvmEeSm4K_ObLCveQ" name="TransFuelMassSWCRunnableEntity">
+      <size xmi:id="_xVhQuZvmEeSm4K_ObLCveQ" numberBits="128464"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQupvmEeSm4K_ObLCveQ" data="_xVh3uZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQu5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQvJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQvZvmEeSm4K_ObLCveQ" data="_xVh3t5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQvpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQv5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQwJvmEeSm4K_ObLCveQ" data="_xVh3oZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQwZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQwpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQw5vmEeSm4K_ObLCveQ" data="_xVh3T5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQxJvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQxZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQxpvmEeSm4K_ObLCveQ" data="_xVh3jZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQx5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQyJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQyZvmEeSm4K_ObLCveQ" data="_xVh3sZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQypvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQy5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQzJvmEeSm4K_ObLCveQ" data="_xVh3q5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQzZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQzpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQz5vmEeSm4K_ObLCveQ" data="_xVh3rZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ0JvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ0ZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ0pvmEeSm4K_ObLCveQ" data="_xVh3h5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ05vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ1JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ1ZvmEeSm4K_ObLCveQ" data="_xVh3gZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ1pvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ15vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ2JvmEeSm4K_ObLCveQ" data="_xVh3g5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ2ZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ2pvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ25vmEeSm4K_ObLCveQ" data="_xVh3eZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ3JvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ3ZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ3pvmEeSm4K_ObLCveQ" data="_xVh3e5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVhQ35vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ4JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_umv10KMMEeS1L6p7uqC6pA">
+        <deviation xmi:id="_vFfnUKMMEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_vbr5wKMMEeS1L6p7uqC6pA" value="3985"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_xrziQKMMEeS1L6p7uqC6pA" value="6376"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVhQ4ZvmEeSm4K_ObLCveQ" name="IgnitionSWCRunnableEntity">
+      <size xmi:id="_xVhQ4pvmEeSm4K_ObLCveQ" numberBits="66784"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ45vmEeSm4K_ObLCveQ" data="_xVh3gZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ5JvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ5ZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ5pvmEeSm4K_ObLCveQ" data="_xVh3oZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ55vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ6JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ6ZvmEeSm4K_ObLCveQ" data="_xVh3T5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ6pvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ65vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ7JvmEeSm4K_ObLCveQ" data="_xVh3uZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ7ZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ7pvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ75vmEeSm4K_ObLCveQ" data="_xVh3iZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ8JvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ8ZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ8pvmEeSm4K_ObLCveQ" data="_xVh3fZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ85vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ9JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ9ZvmEeSm4K_ObLCveQ" data="_xVh3f5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ9pvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ95vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ-JvmEeSm4K_ObLCveQ" data="_xVh3VZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVhQ-ZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVhQ-pvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVhQ-5vmEeSm4K_ObLCveQ" data="_xVh3t5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh20JvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh20ZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh20pvmEeSm4K_ObLCveQ" data="_xVh3U5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh205vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh21JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_CEPwUKMNEeS1L6p7uqC6pA">
+        <deviation xmi:id="_CcvI0KMNEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_CwB4QKMNEeS1L6p7uqC6pA" value="3047"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_Odu1gKMNEeS1L6p7uqC6pA" value="4537"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVh21ZvmEeSm4K_ObLCveQ" name="TotalFuelMassSWCRunnableEntity">
+      <size xmi:id="_xVh21pvmEeSm4K_ObLCveQ" numberBits="66432"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh215vmEeSm4K_ObLCveQ" data="_xVh3gZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh22JvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh22ZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh22pvmEeSm4K_ObLCveQ" data="_xVh3lZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh225vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh23JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh23ZvmEeSm4K_ObLCveQ" data="_xVh3l5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh23pvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh235vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh24JvmEeSm4K_ObLCveQ" data="_xVh3t5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh24ZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh24pvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh245vmEeSm4K_ObLCveQ" data="_xVh3h5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh25JvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh25ZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh25pvmEeSm4K_ObLCveQ" data="_xVh3e5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh255vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh26JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh26ZvmEeSm4K_ObLCveQ" data="_xVh3d5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh26pvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh265vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_iPlPYKMNEeS1L6p7uqC6pA">
+        <deviation xmi:id="_iqlwYKMNEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_i_zLYKMNEeS1L6p7uqC6pA" value="743"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_k3Mx4KMNEeS1L6p7uqC6pA" value="1354"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVh27JvmEeSm4K_ObLCveQ" name="OperatingModeSWCRunnableEntity">
+      <size xmi:id="_xVh27ZvmEeSm4K_ObLCveQ" numberBits="139392"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh27pvmEeSm4K_ObLCveQ" data="_xVh3T5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh275vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh28JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh28ZvmEeSm4K_ObLCveQ" data="_xVh3UZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh28pvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh285vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh29JvmEeSm4K_ObLCveQ" data="_xVh3j5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh29ZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh29pvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh295vmEeSm4K_ObLCveQ" data="_xVh3kZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh2-JvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh2-ZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh2-pvmEeSm4K_ObLCveQ" data="_xVh3TZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh2-5vmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh2_JvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh2_ZvmEeSm4K_ObLCveQ" data="_xVh3k5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh2_pvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh2_5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3AJvmEeSm4K_ObLCveQ" data="_xVh3h5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3AZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3ApvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3A5vmEeSm4K_ObLCveQ" data="_xVh3fZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3BJvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3BZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3BpvmEeSm4K_ObLCveQ" data="_xVh3f5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3B5vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3CJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3CZvmEeSm4K_ObLCveQ" data="_xVh3gZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3CpvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3C5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3DJvmEeSm4K_ObLCveQ" data="_xVh3hZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3DZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3DpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3D5vmEeSm4K_ObLCveQ" data="_xVh3g5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3EJvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3EZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3EpvmEeSm4K_ObLCveQ" data="_xVh3i5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3E5vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3FJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3FZvmEeSm4K_ObLCveQ" data="_xVh3iZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3FpvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3F5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3GJvmEeSm4K_ObLCveQ" data="_xVh3jZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3GZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3GpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_3QhSkKMNEeS1L6p7uqC6pA">
+        <deviation xmi:id="_3wnH4KMNEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_4J3VYKMNEeS1L6p7uqC6pA" value="18612"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_6CZkUKMNEeS1L6p7uqC6pA" value="39281"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVh3G5vmEeSm4K_ObLCveQ" name="IdleSpeedCtrlSWCRunnableEntity">
+      <size xmi:id="_xVh3HJvmEeSm4K_ObLCveQ" numberBits="66976"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3HZvmEeSm4K_ObLCveQ" data="_xVh3fZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh3HpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh3H5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3IJvmEeSm4K_ObLCveQ" data="_xVh3T5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh3IZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh3IpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3I5vmEeSm4K_ObLCveQ" data="_xVh3t5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh3JJvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh3JZvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3JpvmEeSm4K_ObLCveQ" data="_xVh3k5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3J5vmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3KJvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3KZvmEeSm4K_ObLCveQ" data="_xVh3r5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3KpvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3K5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3LJvmEeSm4K_ObLCveQ" data="_xVh3VZvmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3LZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3LpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_9WUzMKMNEeS1L6p7uqC6pA">
+        <deviation xmi:id="_9wQ9MKMNEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_-E3UMKMNEeS1L6p7uqC6pA" value="913"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="__qtQoKMNEeS1L6p7uqC6pA" value="1686"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVh3L5vmEeSm4K_ObLCveQ" name="APedSensorDiagRunnable">
+      <size xmi:id="_xVh3MJvmEeSm4K_ObLCveQ" numberBits="66288"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3MZvmEeSm4K_ObLCveQ" data="_xVh3RZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh3MpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh3M5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3NJvmEeSm4K_ObLCveQ" data="_xVh3R5vmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh3NZvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh3NpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_Co0nkKMOEeS1L6p7uqC6pA">
+        <deviation xmi:id="_C-yQgKMOEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_DTANAKMOEeS1L6p7uqC6pA" value="102"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_FTZ-gKMOEeS1L6p7uqC6pA" value="235"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_xVh3N5vmEeSm4K_ObLCveQ" name="InjBattVoltCorrSWCRunnable">
+      <size xmi:id="_xVh3OJvmEeSm4K_ObLCveQ" numberBits="56928"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3OZvmEeSm4K_ObLCveQ" data="_xVh3mZvmEeSm4K_ObLCveQ">
+        <statistic xmi:id="_xVh3OpvmEeSm4K_ObLCveQ">
+          <read xsi:type="common:SingleValueStatistic" xmi:id="_xVh3O5vmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_xVh3PJvmEeSm4K_ObLCveQ" data="_xVh3m5vmEeSm4K_ObLCveQ" access="write">
+        <statistic xmi:id="_xVh3PZvmEeSm4K_ObLCveQ">
+          <write xsi:type="common:SingleValueStatistic" xmi:id="_xVh3PpvmEeSm4K_ObLCveQ" value="1.0"/>
+        </statistic>
+      </runnableItems>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_IJgo8KMOEeS1L6p7uqC6pA">
+        <deviation xmi:id="_IjX6cKMOEeS1L6p7uqC6pA">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_I5GS0KMOEeS1L6p7uqC6pA" value="290"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_Ki6wUKMOEeS1L6p7uqC6pA" value="547"/>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <labels xmi:id="_xVh3P5vmEeSm4K_ObLCveQ" name="AcceleratorPedalPositions">
+      <size xmi:id="_xVh3QJvmEeSm4K_ObLCveQ" numberBits="4"/>
+    </labels>
+    <labels xmi:id="_xVh3QZvmEeSm4K_ObLCveQ" name="TriggeredCylinderNumber">
+      <size xmi:id="_xVh3QpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3Q5vmEeSm4K_ObLCveQ" name="CylinderNumber">
+      <size xmi:id="_xVh3RJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3RZvmEeSm4K_ObLCveQ" name="PedalAngle1">
+      <size xmi:id="_xVh3RpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3R5vmEeSm4K_ObLCveQ" name="PedalAngle2">
+      <size xmi:id="_xVh3SJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3SZvmEeSm4K_ObLCveQ" name="AcceleratorPedalPosition1">
+      <size xmi:id="_xVh3SpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3S5vmEeSm4K_ObLCveQ" name="AcceleratorPedalPosition2">
+      <size xmi:id="_xVh3TJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3TZvmEeSm4K_ObLCveQ" name="VotedPedalPosition">
+      <size xmi:id="_xVh3TpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3T5vmEeSm4K_ObLCveQ" name="EngineSpeed">
+      <size xmi:id="_xVh3UJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3UZvmEeSm4K_ObLCveQ" name="VehicleSpeed">
+      <size xmi:id="_xVh3UpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3U5vmEeSm4K_ObLCveQ" name="IgnitionTiming">
+      <size xmi:id="_xVh3VJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3VZvmEeSm4K_ObLCveQ" name="IdleIgnitionCorrection">
+      <size xmi:id="_xVh3VpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3V5vmEeSm4K_ObLCveQ" name="IgnitionTime1">
+      <size xmi:id="_xVh3WJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3WZvmEeSm4K_ObLCveQ" name="IgnitionTime2">
+      <size xmi:id="_xVh3WpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3W5vmEeSm4K_ObLCveQ" name="IgnitionTime3">
+      <size xmi:id="_xVh3XJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3XZvmEeSm4K_ObLCveQ" name="IgnitionTime4">
+      <size xmi:id="_xVh3XpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3X5vmEeSm4K_ObLCveQ" name="IgnitionTime5">
+      <size xmi:id="_xVh3YJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3YZvmEeSm4K_ObLCveQ" name="IgnitionTime6">
+      <size xmi:id="_xVh3YpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3Y5vmEeSm4K_ObLCveQ" name="IgnitionTime7">
+      <size xmi:id="_xVh3ZJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3ZZvmEeSm4K_ObLCveQ" name="IgnitionTime8">
+      <size xmi:id="_xVh3ZpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3Z5vmEeSm4K_ObLCveQ" name="InjTimeCyl1">
+      <size xmi:id="_xVh3aJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3aZvmEeSm4K_ObLCveQ" name="InjTimeCyl2">
+      <size xmi:id="_xVh3apvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3a5vmEeSm4K_ObLCveQ" name="InjTimeCyl3">
+      <size xmi:id="_xVh3bJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3bZvmEeSm4K_ObLCveQ" name="InjTimeCyl4">
+      <size xmi:id="_xVh3bpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3b5vmEeSm4K_ObLCveQ" name="InjTimeCyl5">
+      <size xmi:id="_xVh3cJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3cZvmEeSm4K_ObLCveQ" name="InjTimeCyl6">
+      <size xmi:id="_xVh3cpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3c5vmEeSm4K_ObLCveQ" name="InjTimeCyl7">
+      <size xmi:id="_xVh3dJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3dZvmEeSm4K_ObLCveQ" name="InjTimeCyl8">
+      <size xmi:id="_xVh3dpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3d5vmEeSm4K_ObLCveQ" name="TotalFuelMassPerStroke">
+      <size xmi:id="_xVh3eJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3eZvmEeSm4K_ObLCveQ" name="BaseFuelMassPerStroke">
+      <size xmi:id="_xVh3epvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3e5vmEeSm4K_ObLCveQ" name="TransientFuelMassPerStroke">
+      <size xmi:id="_xVh3fJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3fZvmEeSm4K_ObLCveQ" name="IdleFlag">
+      <size xmi:id="_xVh3fpvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3f5vmEeSm4K_ObLCveQ" name="IdleOLFlag">
+      <size xmi:id="_xVh3gJvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3gZvmEeSm4K_ObLCveQ" name="CrankFlag">
+      <size xmi:id="_xVh3gpvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3g5vmEeSm4K_ObLCveQ" name="FuelEnabled">
+      <size xmi:id="_xVh3hJvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3hZvmEeSm4K_ObLCveQ" name="OverrunFlag">
+      <size xmi:id="_xVh3hpvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3h5vmEeSm4K_ObLCveQ" name="OverrunFuelShutoffFlag">
+      <size xmi:id="_xVh3iJvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3iZvmEeSm4K_ObLCveQ" name="OverrunIgnitionRetard">
+      <size xmi:id="_xVh3ipvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3i5vmEeSm4K_ObLCveQ" name="AFRFeedbackFlag">
+      <size xmi:id="_xVh3jJvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3jZvmEeSm4K_ObLCveQ" name="UpdatePeriod">
+      <size xmi:id="_xVh3jpvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3j5vmEeSm4K_ObLCveQ" name="IgnitionOn">
+      <size xmi:id="_xVh3kJvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3kZvmEeSm4K_ObLCveQ" name="PowerUpComplete">
+      <size xmi:id="_xVh3kpvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3k5vmEeSm4K_ObLCveQ" name="IdleSpeedSetpoint">
+      <size xmi:id="_xVh3lJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3lZvmEeSm4K_ObLCveQ" name="LambdaCat1">
+      <size xmi:id="_xVh3lpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3l5vmEeSm4K_ObLCveQ" name="LambdaCat2">
+      <size xmi:id="_xVh3mJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3mZvmEeSm4K_ObLCveQ" name="BatteryVoltage">
+      <size xmi:id="_xVh3mpvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3m5vmEeSm4K_ObLCveQ" name="BatVoltCorr">
+      <size xmi:id="_xVh3nJvmEeSm4K_ObLCveQ" numberBits="1"/>
+    </labels>
+    <labels xmi:id="_xVh3nZvmEeSm4K_ObLCveQ" name="MAFSensorVoltage">
+      <size xmi:id="_xVh3npvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3n5vmEeSm4K_ObLCveQ" name="MAFSensor">
+      <size xmi:id="_xVh3oJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3oZvmEeSm4K_ObLCveQ" name="MafRateOut">
+      <size xmi:id="_xVh3opvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3o5vmEeSm4K_ObLCveQ" name="ThrottleAngle1">
+      <size xmi:id="_xVh3pJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3pZvmEeSm4K_ObLCveQ" name="ThrottleAngle2">
+      <size xmi:id="_xVh3ppvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3p5vmEeSm4K_ObLCveQ" name="ThrottlePosition1">
+      <size xmi:id="_xVh3qJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3qZvmEeSm4K_ObLCveQ" name="ThrottlePosition2">
+      <size xmi:id="_xVh3qpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3q5vmEeSm4K_ObLCveQ" name="ThrottleImpulseBeta1">
+      <size xmi:id="_xVh3rJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3rZvmEeSm4K_ObLCveQ" name="ThrottleImpulseBeta2">
+      <size xmi:id="_xVh3rpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3r5vmEeSm4K_ObLCveQ" name="IdleThrottleCorrection">
+      <size xmi:id="_xVh3sJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3sZvmEeSm4K_ObLCveQ" name="RateOfThrottleChange">
+      <size xmi:id="_xVh3spvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3s5vmEeSm4K_ObLCveQ" name="DesiredThrottlePosOut">
+      <size xmi:id="_xVh3tJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3tZvmEeSm4K_ObLCveQ" name="DesiredThrottlePos">
+      <size xmi:id="_xVh3tpvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3t5vmEeSm4K_ObLCveQ" name="CoolantTemperature">
+      <size xmi:id="_xVh3uJvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <labels xmi:id="_xVh3uZvmEeSm4K_ObLCveQ" name="InletAirTemperature">
+      <size xmi:id="_xVh3upvmEeSm4K_ObLCveQ" numberBits="2"/>
+    </labels>
+    <processPrototypes xmi:id="_xVh3u5vmEeSm4K_ObLCveQ" name="CylNumTriggeredTaskSG" priority="30" preemption="preemptive" firstRunnable="_xVhP3JvmEeSm4K_ObLCveQ" lastRunnable="_xVhP3JvmEeSm4K_ObLCveQ" activation="_xVh335vmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVh3vJvmEeSm4K_ObLCveQ" key="stackSize">
+        <value xsi:type="common:IntegerObject" xmi:id="_xVh3vZvmEeSm4K_ObLCveQ" value="1024"/>
+      </customProperties>
+      <customProperties xmi:id="_xVh3vpvmEeSm4K_ObLCveQ" key="taskDef">
+        <value xsi:type="common:ListObject" xmi:id="_xVh3v5vmEeSm4K_ObLCveQ">
+          <values xsi:type="common:StringObject" xmi:id="_xVh3wJvmEeSm4K_ObLCveQ" value="CylNumTriggeredTask"/>
+        </value>
+      </customProperties>
+    </processPrototypes>
+    <processPrototypes xmi:id="_xVh3wZvmEeSm4K_ObLCveQ" name="ActuatorTaskSG" priority="25" preemption="preemptive" firstRunnable="_xVhP5JvmEeSm4K_ObLCveQ" lastRunnable="_xVhQB5vmEeSm4K_ObLCveQ" activation="_xVh335vmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVh3wpvmEeSm4K_ObLCveQ" key="stackSize">
+        <value xsi:type="common:IntegerObject" xmi:id="_xVh3w5vmEeSm4K_ObLCveQ" value="1024"/>
+      </customProperties>
+      <customProperties xmi:id="_xVh3xJvmEeSm4K_ObLCveQ" key="taskDef">
+        <value xsi:type="common:ListObject" xmi:id="_xVh3xZvmEeSm4K_ObLCveQ">
+          <values xsi:type="common:StringObject" xmi:id="_xVh3xpvmEeSm4K_ObLCveQ" value="ActuatorTask"/>
+        </value>
+      </customProperties>
+    </processPrototypes>
+    <processPrototypes xmi:id="_xVh3x5vmEeSm4K_ObLCveQ" name="Task5msSG" priority="20" preemption="unknown" firstRunnable="_xVhQMJvmEeSm4K_ObLCveQ" lastRunnable="_xVhQRpvmEeSm4K_ObLCveQ" activation="_xVh34JvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVh3yJvmEeSm4K_ObLCveQ" key="stackSize">
+        <value xsi:type="common:IntegerObject" xmi:id="_xVh3yZvmEeSm4K_ObLCveQ" value="1024"/>
+      </customProperties>
+      <customProperties xmi:id="_xVh3ypvmEeSm4K_ObLCveQ" key="taskDef">
+        <value xsi:type="common:ListObject" xmi:id="_xVh3y5vmEeSm4K_ObLCveQ">
+          <values xsi:type="common:StringObject" xmi:id="_xVh3zJvmEeSm4K_ObLCveQ" value="Task5ms"/>
+        </value>
+      </customProperties>
+    </processPrototypes>
+    <processPrototypes xmi:id="_xVh3zZvmEeSm4K_ObLCveQ" name="Task10msSG" priority="15" preemption="unknown" firstRunnable="_xVhQVJvmEeSm4K_ObLCveQ" lastRunnable="_xVh21ZvmEeSm4K_ObLCveQ" activation="_xVh35ZvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVh3zpvmEeSm4K_ObLCveQ" key="stackSize">
+        <value xsi:type="common:IntegerObject" xmi:id="_xVh3z5vmEeSm4K_ObLCveQ" value="1024"/>
+      </customProperties>
+      <customProperties xmi:id="_xVh30JvmEeSm4K_ObLCveQ" key="taskDef">
+        <value xsi:type="common:ListObject" xmi:id="_xVh30ZvmEeSm4K_ObLCveQ">
+          <values xsi:type="common:StringObject" xmi:id="_xVh30pvmEeSm4K_ObLCveQ" value="Task10ms"/>
+        </value>
+      </customProperties>
+    </processPrototypes>
+    <processPrototypes xmi:id="_xVh305vmEeSm4K_ObLCveQ" name="Task20msSG" priority="10" preemption="unknown" firstRunnable="_xVh27JvmEeSm4K_ObLCveQ" lastRunnable="_xVh3G5vmEeSm4K_ObLCveQ" activation="_xVid5JvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVh31JvmEeSm4K_ObLCveQ" key="stackSize">
+        <value xsi:type="common:IntegerObject" xmi:id="_xVh31ZvmEeSm4K_ObLCveQ" value="1024"/>
+      </customProperties>
+      <customProperties xmi:id="_xVh31pvmEeSm4K_ObLCveQ" key="taskDef">
+        <value xsi:type="common:ListObject" xmi:id="_xVh315vmEeSm4K_ObLCveQ">
+          <values xsi:type="common:StringObject" xmi:id="_xVh32JvmEeSm4K_ObLCveQ" value="Task20ms"/>
+        </value>
+      </customProperties>
+    </processPrototypes>
+    <processPrototypes xmi:id="_xVh32ZvmEeSm4K_ObLCveQ" name="Task100msSG" priority="10" preemption="unknown" firstRunnable="_xVh3L5vmEeSm4K_ObLCveQ" lastRunnable="_xVh3N5vmEeSm4K_ObLCveQ" activation="_xVid6ZvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVh32pvmEeSm4K_ObLCveQ" key="stackSize">
+        <value xsi:type="common:IntegerObject" xmi:id="_xVh325vmEeSm4K_ObLCveQ" value="1024"/>
+      </customProperties>
+      <customProperties xmi:id="_xVh33JvmEeSm4K_ObLCveQ" key="taskDef">
+        <value xsi:type="common:ListObject" xmi:id="_xVh33ZvmEeSm4K_ObLCveQ">
+          <values xsi:type="common:StringObject" xmi:id="_xVh33pvmEeSm4K_ObLCveQ" value="Task100ms"/>
+        </value>
+      </customProperties>
+    </processPrototypes>
+    <activations xsi:type="sw:CustomActivation" xmi:id="_xVh335vmEeSm4K_ObLCveQ" name="PeriodicEvent"/>
+    <activations xsi:type="sw:Periodic" xmi:id="_xVh34JvmEeSm4K_ObLCveQ" name="Periodic_5000_0">
+      <min xmi:id="_xVh34ZvmEeSm4K_ObLCveQ" value="5000" unit="us"/>
+      <max xmi:id="_xVh34pvmEeSm4K_ObLCveQ" unit="us"/>
+      <offset xmi:id="_xVh345vmEeSm4K_ObLCveQ" unit="us"/>
+      <deadline xmi:id="_xVh35JvmEeSm4K_ObLCveQ" unit="us"/>
+    </activations>
+    <activations xsi:type="sw:Periodic" xmi:id="_xVh35ZvmEeSm4K_ObLCveQ" name="Periodic_10000_0">
+      <min xmi:id="_xVid4JvmEeSm4K_ObLCveQ" value="10000" unit="us"/>
+      <max xmi:id="_xVid4ZvmEeSm4K_ObLCveQ" unit="us"/>
+      <offset xmi:id="_xVid4pvmEeSm4K_ObLCveQ" unit="us"/>
+      <deadline xmi:id="_xVid45vmEeSm4K_ObLCveQ" unit="us"/>
+    </activations>
+    <activations xsi:type="sw:Periodic" xmi:id="_xVid5JvmEeSm4K_ObLCveQ" name="Periodic_20000_0">
+      <min xmi:id="_xVid5ZvmEeSm4K_ObLCveQ" value="20000" unit="us"/>
+      <max xmi:id="_xVid5pvmEeSm4K_ObLCveQ" unit="us"/>
+      <offset xmi:id="_xVid55vmEeSm4K_ObLCveQ" unit="us"/>
+      <deadline xmi:id="_xVid6JvmEeSm4K_ObLCveQ" unit="us"/>
+    </activations>
+    <activations xsi:type="sw:Periodic" xmi:id="_xVid6ZvmEeSm4K_ObLCveQ" name="Periodic_100000_0">
+      <min xmi:id="_xVid6pvmEeSm4K_ObLCveQ" value="100000" unit="us"/>
+      <max xmi:id="_xVid65vmEeSm4K_ObLCveQ" unit="us"/>
+      <offset xmi:id="_xVid7JvmEeSm4K_ObLCveQ" unit="us"/>
+      <deadline xmi:id="_xVid7ZvmEeSm4K_ObLCveQ" unit="us"/>
+    </activations>
+  </swModel>
+  <hwModel xmi:id="_xVid7pvmEeSm4K_ObLCveQ">
+    <coreTypes xmi:id="_xVid75vmEeSm4K_ObLCveQ" name="Core_0" instructionsPerCycle="4">
+      <attribute xsi:type="hw:StrValue" xmi:id="_xVid8JvmEeSm4K_ObLCveQ" name="vpmTitle" value="/Top/DTC1798_uP/TriCoreDTC1798/TriCore0/VpmCtrl"/>
+      <attribute xsi:type="hw:StrValue" xmi:id="_xVid8ZvmEeSm4K_ObLCveQ" name="logFile" value="c:\usr\vast\metrix\20091208-0"/>
+    </coreTypes>
+    <coreTypes xmi:id="_xVid8pvmEeSm4K_ObLCveQ" name="Core_1" instructionsPerCycle="4">
+      <attribute xsi:type="hw:StrValue" xmi:id="_xVid85vmEeSm4K_ObLCveQ" name="vpmTitle" value="/Top/DTC1798_uP/TriCoreDTC1798/TriCore1/VpmCtrl"/>
+      <attribute xsi:type="hw:StrValue" xmi:id="_xVid9JvmEeSm4K_ObLCveQ" name="logFile" value="c:\usr\vast\metrix\20091208-1"/>
+    </coreTypes>
+    <networkTypes xsi:type="hw:Bus" xmi:id="_xVid9ZvmEeSm4K_ObLCveQ" name="Default_Network" busType="NA"/>
+    <system xmi:id="_xVid9pvmEeSm4K_ObLCveQ" name="Default_TaskProc_System">
+      <ecus xmi:id="_xVid95vmEeSm4K_ObLCveQ" name="Default_TaskProc_ECU">
+        <quartzes xmi:id="_xVid-JvmEeSm4K_ObLCveQ" name="Default_TaskProc_Quartz" frequency="80000000" type="STATIC"/>
+        <microcontrollers xmi:id="_xVid-ZvmEeSm4K_ObLCveQ" name="Default_TaskProc_Microcontroller">
+          <networks xmi:id="_xVid-pvmEeSm4K_ObLCveQ" name="Default_Network" type="_xVid9ZvmEeSm4K_ObLCveQ"/>
+          <cores xmi:id="_xVid-5vmEeSm4K_ObLCveQ" name="Core_0" coreType="_xVid75vmEeSm4K_ObLCveQ">
+            <ports xsi:type="hw:ComplexPort" xmi:id="_xVid_JvmEeSm4K_ObLCveQ" name="Core0_Port" network="_xVid-pvmEeSm4K_ObLCveQ" isMaster="true" direction="RW" writeCycles="1" readCycles="1"/>
+            <prescaler xmi:id="_xVid_ZvmEeSm4K_ObLCveQ" name="Presc_0" clockRatio="1.0" quartz="_xVid-JvmEeSm4K_ObLCveQ"/>
+          </cores>
+          <cores xmi:id="_xVid_pvmEeSm4K_ObLCveQ" name="Core_1" coreType="_xVid8pvmEeSm4K_ObLCveQ">
+            <ports xsi:type="hw:ComplexPort" xmi:id="_xVid_5vmEeSm4K_ObLCveQ" name="Core1_Port" network="_xVid-pvmEeSm4K_ObLCveQ" isMaster="true" direction="RW" writeCycles="1" readCycles="1"/>
+            <prescaler xmi:id="_xVieAJvmEeSm4K_ObLCveQ" name="Presc_1" clockRatio="1.0" quartz="_xVid-JvmEeSm4K_ObLCveQ"/>
+          </cores>
+        </microcontrollers>
+      </ecus>
+    </system>
+  </hwModel>
+  <osModel xmi:id="_xVieAZvmEeSm4K_ObLCveQ">
+    <scheduler xmi:id="_xVieApvmEeSm4K_ObLCveQ" name="Sched_0">
+      <schedulingAlgorithm xsi:type="os:OSEK" xmi:id="_xVieA5vmEeSm4K_ObLCveQ"/>
+      <schedulingUnit xsi:type="os:SchedulingHWUnit" xmi:id="_xVieBJvmEeSm4K_ObLCveQ">
+        <delay xmi:id="_xVieBZvmEeSm4K_ObLCveQ" value="1" unit="ns"/>
+      </schedulingUnit>
+    </scheduler>
+    <scheduler xmi:id="_xVieBpvmEeSm4K_ObLCveQ" name="Sched_1">
+      <schedulingAlgorithm xsi:type="os:OSEK" xmi:id="_xVieB5vmEeSm4K_ObLCveQ"/>
+      <schedulingUnit xsi:type="os:SchedulingHWUnit" xmi:id="_xVieCJvmEeSm4K_ObLCveQ">
+        <delay xmi:id="_xVieCZvmEeSm4K_ObLCveQ" value="1" unit="ns"/>
+      </schedulingUnit>
+    </scheduler>
+  </osModel>
+  <stimuliModel xmi:id="_xVieCpvmEeSm4K_ObLCveQ">
+    <stimuli xsi:type="stimuli:Periodic" xmi:id="_xVieC5vmEeSm4K_ObLCveQ" name="Stimuli_ISR_Rte_Tick">
+      <offset xmi:id="_xVieDJvmEeSm4K_ObLCveQ" unit="us"/>
+      <recurrence xmi:id="_xVieDZvmEeSm4K_ObLCveQ" value="5" unit="ms"/>
+    </stimuli>
+    <stimuli xsi:type="stimuli:Periodic" xmi:id="_fqUncL5jEeScrbuHTydbUg" name="Stimuli_CylNumTriggeredTask">
+      <offset xmi:id="_lLIkoL5jEeScrbuHTydbUg" unit="us"/>
+      <recurrence xmi:id="_gQRNIL5jEeScrbuHTydbUg" value="5" unit="ms"/>
+    </stimuli>
+    <stimuli xsi:type="stimuli:Periodic" xmi:id="_rsQvUL5jEeScrbuHTydbUg" name="Stimuli_ActuatorTask">
+      <offset xmi:id="_w6XL4L5jEeScrbuHTydbUg" unit="ms"/>
+      <recurrence xmi:id="_sSVQ0L5jEeScrbuHTydbUg" value="5" unit="ms"/>
+    </stimuli>
+    <stimuli xsi:type="stimuli:CustomStimulus" xmi:id="_xVieEJvmEeSm4K_ObLCveQ" name="Stimuli_ComProxy">
+      <customProperties xmi:id="_xVieEZvmEeSm4K_ObLCveQ" key="schedulingType">
+        <value xsi:type="common:StringObject" xmi:id="_xVieEpvmEeSm4K_ObLCveQ" value="sporadic"/>
+      </customProperties>
+    </stimuli>
+    <stimuli xsi:type="stimuli:Periodic" xmi:id="_xVieE5vmEeSm4K_ObLCveQ" name="Stimuli_Task5ms">
+      <offset xmi:id="_xVieFJvmEeSm4K_ObLCveQ" unit="us"/>
+      <recurrence xmi:id="_xVieFZvmEeSm4K_ObLCveQ" value="5000" unit="us"/>
+    </stimuli>
+    <stimuli xsi:type="stimuli:Periodic" xmi:id="_xVieFpvmEeSm4K_ObLCveQ" name="Stimuli_Task10ms">
+      <offset xmi:id="_xVieF5vmEeSm4K_ObLCveQ" unit="us"/>
+      <recurrence xmi:id="_xVieGJvmEeSm4K_ObLCveQ" value="10000" unit="us"/>
+    </stimuli>
+    <stimuli xsi:type="stimuli:Periodic" xmi:id="_xVieGZvmEeSm4K_ObLCveQ" name="Stimuli_Task20ms">
+      <offset xmi:id="_xVieGpvmEeSm4K_ObLCveQ" unit="us"/>
+      <recurrence xmi:id="_xVieG5vmEeSm4K_ObLCveQ" value="20000" unit="us"/>
+    </stimuli>
+    <stimuli xsi:type="stimuli:Periodic" xmi:id="_xVieHJvmEeSm4K_ObLCveQ" name="Stimuli_Task100ms">
+      <offset xmi:id="_xVieHZvmEeSm4K_ObLCveQ" unit="us"/>
+      <recurrence xmi:id="_xVieHpvmEeSm4K_ObLCveQ" value="100000" unit="us"/>
+    </stimuli>
+  </stimuliModel>
+  <constraintsModel xmi:id="_xVieH5vmEeSm4K_ObLCveQ"/>
+  <eventModel xmi:id="_xVieIJvmEeSm4K_ObLCveQ">
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieIZvmEeSm4K_ObLCveQ" name="startISR_Rte_Tick_159f6ab3-0eca-429e-a09f-5ac6e435b70f" description="Start of ISR_Rte_Tick" eventType="start" entity="_xVgospvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieIpvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieI5vmEeSm4K_ObLCveQ" value="Os_Entry_Rte_Tick"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieJJvmEeSm4K_ObLCveQ" name="endISR_Rte_Tick_d987e3aa-6838-4158-a7b7-6375a28b053d" description="End of ISR_Rte_Tick" eventType="terminate" entity="_xVgospvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieJZvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieJpvmEeSm4K_ObLCveQ" value="Rte_Tick_End"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieJ5vmEeSm4K_ObLCveQ" name="startCylNumTriggeredTask_d6737dbe-32d8-4963-b92c-81f3eff129ad" description="Start of CylNumTriggeredTask" eventType="start" entity="_xVgouZvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieKJvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieKZvmEeSm4K_ObLCveQ" value="Os_Entry_CylNumTriggeredTask"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieKpvmEeSm4K_ObLCveQ" name="endCylNumTriggeredTask_a6e2f728-f714-4085-982a-5e99d230bff9" description="End of CylNumTriggeredTask" eventType="terminate" entity="_xVgouZvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieK5vmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieLJvmEeSm4K_ObLCveQ" value="CylNumTriggeredTask_End"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieLZvmEeSm4K_ObLCveQ" name="startActuatorTask_ed3be45c-2360-43cc-a99d-f60c9317a80d" description="Start of ActuatorTask" eventType="start" entity="_xVgowJvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieLpvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieL5vmEeSm4K_ObLCveQ" value="ActuatorTask_Start"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieMJvmEeSm4K_ObLCveQ" name="endActuatorTask_11e83a4a-2abd-403d-80d8-071f8afc1d81" description="End of ActuatorTask" eventType="terminate" entity="_xVgowJvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieMZvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieMpvmEeSm4K_ObLCveQ" value="ActuatorTask_End"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieM5vmEeSm4K_ObLCveQ" name="startComProxy_498ef3fc-930d-478d-9511-f66711b97854" description="Start of ComProxy" eventType="start" entity="_xVgoyJvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieNJvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieNZvmEeSm4K_ObLCveQ" value="ComProxy_Start"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieNpvmEeSm4K_ObLCveQ" name="endComProxy_7eff871d-0cee-4e07-a8c7-dd82cbe3c7be" description="End of ComProxy" eventType="terminate" entity="_xVgoyJvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieN5vmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieOJvmEeSm4K_ObLCveQ" value="ComProxy_End"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieOZvmEeSm4K_ObLCveQ" name="startTask5ms_3573a657-5951-4b20-9612-10ce486767dd" description="Start of Task5ms" eventType="start" entity="_xVgozZvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieOpvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieO5vmEeSm4K_ObLCveQ" value="Os_Entry_Task5ms"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xViePJvmEeSm4K_ObLCveQ" name="endTask5ms_9e2fa205-36a3-4cc8-863f-6fe29d478ab3" description="End of Task5ms" eventType="terminate" entity="_xVgozZvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xViePZvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xViePpvmEeSm4K_ObLCveQ" value="Task5ms_End"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieP5vmEeSm4K_ObLCveQ" name="startTask10ms_991cfc5f-0b5f-43a2-9932-39d863077e83" description="Start of Task10ms" eventType="start" entity="_xVgo1pvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieQJvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieQZvmEeSm4K_ObLCveQ" value="Os_Entry_Task10ms"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieQpvmEeSm4K_ObLCveQ" name="endTask10ms_077622c2-b3fe-491e-aa55-4bda403d1ec2" description="End of Task10ms" eventType="terminate" entity="_xVgo1pvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieQ5vmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieRJvmEeSm4K_ObLCveQ" value="Task10ms_End"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieRZvmEeSm4K_ObLCveQ" name="startTask20ms_086e42a1-3b89-4479-b666-e0fd78cd61df" description="Start of Task20ms" eventType="start" entity="_xVhPypvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieRpvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieR5vmEeSm4K_ObLCveQ" value="Os_Entry_Task20ms"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieSJvmEeSm4K_ObLCveQ" name="endTask20ms_7df5c666-3b43-4c26-9ddc-05fa553df827" description="End of Task20ms" eventType="terminate" entity="_xVhPypvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieSZvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieSpvmEeSm4K_ObLCveQ" value="Task20ms_End"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieS5vmEeSm4K_ObLCveQ" name="startTask100ms_b3ab6532-564d-4b00-9306-f72519c6eb28" description="Start of Task100ms" eventType="start" entity="_xVhP0pvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieTJvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieTZvmEeSm4K_ObLCveQ" value="Os_Entry_Task100ms"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:ProcessEvent" xmi:id="_xVieTpvmEeSm4K_ObLCveQ" name="endTask100ms_cfbe5df4-f5c6-4428-8e07-0d0d28e4f5ec" description="End of Task100ms" eventType="terminate" entity="_xVhP0pvmEeSm4K_ObLCveQ">
+      <customProperties xmi:id="_xVieT5vmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieUJvmEeSm4K_ObLCveQ" value="Task100ms_End"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:CustomEvent" xmi:id="_xVieUZvmEeSm4K_ObLCveQ" name="startOfCode_eacdccf7-201f-4ad9-9ceb-a020e3055c11" description="Start of Code" eventType="Symbol">
+      <customProperties xmi:id="_xVieUpvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieU5vmEeSm4K_ObLCveQ" value="0xa0004000"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:CustomEvent" xmi:id="_xVieVJvmEeSm4K_ObLCveQ" name="startOfMain_6e623dbb-0e4a-49ff-ab42-61fb3b169d58" description="Start of Main routine" eventType="Symbol">
+      <customProperties xmi:id="_xVieVZvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieVpvmEeSm4K_ObLCveQ" value="main"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:CustomEvent" xmi:id="_xVieV5vmEeSm4K_ObLCveQ" name="GetSpinlock0_f33da020-fa6c-420b-8240-ffd3c4c4e039" description="Start of GetSpinlock" eventType="Symbol">
+      <customProperties xmi:id="_xVieWJvmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieWZvmEeSm4K_ObLCveQ" value="Os_GetSpinlock"/>
+      </customProperties>
+    </events>
+    <events xsi:type="events:CustomEvent" xmi:id="_xVieWpvmEeSm4K_ObLCveQ" name="ReleaseSpinlock0_acd9d500-88e4-485a-bffb-e5fd213c6985" description="End of Spinlock" eventType="Symbol">
+      <customProperties xmi:id="_xVieW5vmEeSm4K_ObLCveQ" key="symbol">
+        <value xsi:type="common:StringObject" xmi:id="_xVieXJvmEeSm4K_ObLCveQ" value="Os_ReleaseSpinlock"/>
+      </customProperties>
+    </events>
+  </eventModel>
+  <propertyConstraintsModel xmi:id="_xVieXZvmEeSm4K_ObLCveQ"/>
+  <mappingModel xmi:id="_xVieXpvmEeSm4K_ObLCveQ">
+    <executableAllocation xsi:type="mapping:ProcessAllocation" xmi:id="_xVieX5vmEeSm4K_ObLCveQ" scheduler="_xVieApvmEeSm4K_ObLCveQ" process="_xVgospvmEeSm4K_ObLCveQ"/>
+    <executableAllocation xsi:type="mapping:ProcessAllocation" xmi:id="_xVieYJvmEeSm4K_ObLCveQ" scheduler="_xVieApvmEeSm4K_ObLCveQ" process="_xVgouZvmEeSm4K_ObLCveQ"/>
+    <executableAllocation xsi:type="mapping:ProcessAllocation" xmi:id="_xVieYZvmEeSm4K_ObLCveQ" scheduler="_xVieApvmEeSm4K_ObLCveQ" process="_xVgowJvmEeSm4K_ObLCveQ"/>
+    <executableAllocation xsi:type="mapping:ProcessAllocation" xmi:id="_xVieYpvmEeSm4K_ObLCveQ" scheduler="_xVieApvmEeSm4K_ObLCveQ" process="_xVgoyJvmEeSm4K_ObLCveQ"/>
+    <executableAllocation xsi:type="mapping:ProcessAllocation" xmi:id="_xVieY5vmEeSm4K_ObLCveQ" scheduler="_xVieBpvmEeSm4K_ObLCveQ" process="_xVgozZvmEeSm4K_ObLCveQ"/>
+    <executableAllocation xsi:type="mapping:ProcessAllocation" xmi:id="_xVieZJvmEeSm4K_ObLCveQ" scheduler="_xVieBpvmEeSm4K_ObLCveQ" process="_xVgo1pvmEeSm4K_ObLCveQ"/>
+    <executableAllocation xsi:type="mapping:ProcessAllocation" xmi:id="_xVieZZvmEeSm4K_ObLCveQ" scheduler="_xVieBpvmEeSm4K_ObLCveQ" process="_xVhPypvmEeSm4K_ObLCveQ"/>
+    <executableAllocation xsi:type="mapping:ProcessAllocation" xmi:id="_xVieZpvmEeSm4K_ObLCveQ" scheduler="_xVieBpvmEeSm4K_ObLCveQ" process="_xVhP0pvmEeSm4K_ObLCveQ"/>
+    <coreAllocation xmi:id="_xVieZ5vmEeSm4K_ObLCveQ" scheduler="_xVieApvmEeSm4K_ObLCveQ" core="_xVid-5vmEeSm4K_ObLCveQ"/>
+    <coreAllocation xmi:id="_xVieaJvmEeSm4K_ObLCveQ" scheduler="_xVieBpvmEeSm4K_ObLCveQ" core="_xVid_pvmEeSm4K_ObLCveQ"/>
+  </mappingModel>
+  <componentsModel xmi:id="_xVieaZvmEeSm4K_ObLCveQ"/>
+</central:AMALTHEA>

@@ -1,0 +1,9 @@
+Configuration frequency(MHz) : 200
+Static power of the ALPHA_cpu(W) : 0.454
+Dynamic power of an empty ALPHA_cpu(W) : 0
+Static power of the ARM_cpu(W) : 0.386
+Dynamic power of an empty ARM_cpu(W) : 0
+Number of VC per input : 8
+Cpu architecture : ARM (ARM : ARM_A7, ALP : ALPHA21364)
+Computation instructions complexity interval : 1 7 (1,2,3,4,5,6,7)
+Computation complexity selection mode : 0 (0 for a constant seed or 1 for a variable seed)

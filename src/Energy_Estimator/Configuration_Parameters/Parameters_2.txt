@@ -1,0 +1,22 @@
+Size of local Label set(MB) : 256
+Number of banks(labels) : 8
+Number of bits read out : 8
+Dynamic energy per read port label set(nJ) : 0.263
+Standby leakage power per bank(W) : 0.3194
+Refresh power (percentage of leakage) : 0.102
+Size of WRB(kB) : 1
+Size of REB(kB) : 2
+Size of PRB(kB) : 1
+Number of banks buffers : 1
+Dynamic energy per read port WRB(nJ) : 0.000464
+Dynamic energy per read port REB(nJ) : 0.0004786
+Dynamic energy per read port PRB(nJ) : 0.000464
+Standby leakage power per bank WRB(W) : 0.00010
+Standby leakage power per bank REB(W) : 0.0002378
+Standby leakage power per bank PRB(W) : 0.00010
+Size of SB(B) : 512
+Size of RB(B) : 512
+Dynamic energy per read port RB(nJ) : 0.0001926
+Standby leakage power per bank RB(W) : 0.00004976
+Size for storing instruction(bytes) : 10
+Size for storing instructions offset(bytes) : 20 

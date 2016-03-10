@@ -1,9 +1,8 @@
 # abstract-simulator
 
 This repository contains the simulator used to simulate embedded applications described using
-the Amalthea application model on top of NoC based architecture. The simulator has been validated
-using the "toy" applications provided in the apps folder.
-Once you have unzipped the archive provided in this repository, follow the steps below to run a simulation.
+the Amalthea application model on top of NoC-based architectures. 
+Follow the steps below to run a simulation.
 
 ## Directory content
 
@@ -55,7 +54,7 @@ The requirements for using both script are the following ones:
 Compilation is done through the compile.py script which documentation is the following:  
 
 >> compile.py build -h  
-usage: compile.py build [-h] [-c] [-v]  
+usage: compile.py build [-h] [-c] [-v]
 
 optional arguments:  
   -h, --help     show this help message and exit  

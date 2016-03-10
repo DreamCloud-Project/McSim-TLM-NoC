@@ -1,0 +1,4 @@
+0.0;PowerUp;/home/manu/postdoc/retinoc/Abstract_Simulator_v3/apps/DEMO_CAR/DemoCar-PowerUp.amxmi
+0.01;Drive;/home/manu/postdoc/retinoc/Abstract_Simulator_v3/apps/DEMO_CAR/DemoCar-Drive.amxmi
+0.02;PowerDown;/home/manu/postdoc/retinoc/Abstract_Simulator_v3/apps/DEMO_CAR/DemoCar-PowerDown.amxmi
+0.03;end;

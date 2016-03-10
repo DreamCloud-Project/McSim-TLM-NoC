@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<central:AMALTHEA xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:central="http://www.amalthea.itea2.org/model/1.1.0/central" xmlns:common="http://www.amalthea.itea2.org/model/1.1.0/common" xmlns:hw="http://www.amalthea.itea2.org/model/1.1.0/hw" xmlns:os="http://www.amalthea.itea2.org/model/1.1.0/os" xmlns:stimuli="http://www.amalthea.itea2.org/model/1.1.0/stimuli" xmlns:sw="http://www.amalthea.itea2.org/model/1.1.0/sw" xmi:id="_H08YgN9NEeOETou3oNmhPQ">
+  <swModel xmi:id="_H08Ygd9NEeOETou3oNmhPQ">
+    <tasks xmi:id="_H08Ygt9NEeOETou3oNmhPQ" name="Task_10MS" priority="10" stimuli="_H1Fic99NEeOETou3oNmhPQ" preemption="preemptive" multipleTaskActivationLimit="10">
+      <deadline xmi:id="_H08Yg99NEeOETou3oNmhPQ" value="10" unit="ms"/>
+      <callGraph xmi:id="_H08YhN9NEeOETou3oNmhPQ">
+        <graphEntries xsi:type="sw:CallSequence" xmi:id="_H08Yhd9NEeOETou3oNmhPQ">
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yht9NEeOETou3oNmhPQ" runnable="_H08ZUN9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yh99NEeOETou3oNmhPQ" runnable="_H08Y7t9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YiN9NEeOETou3oNmhPQ" runnable="_H08ZgN9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yid9NEeOETou3oNmhPQ" runnable="_H08aRt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yit9NEeOETou3oNmhPQ" runnable="_H08ZDN9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yi99NEeOETou3oNmhPQ" runnable="_H08ZON9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YjN9NEeOETou3oNmhPQ" runnable="_H08Yud9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yjd9NEeOETou3oNmhPQ" runnable="_H08Y999NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yjt9NEeOETou3oNmhPQ" runnable="_H08ZRt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yj99NEeOETou3oNmhPQ" runnable="_H08Y5d9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YkN9NEeOETou3oNmhPQ" runnable="_H08Z8N9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ykd9NEeOETou3oNmhPQ" runnable="_H08ZGt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ykt9NEeOETou3oNmhPQ" runnable="_H08ZI99NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yk99NEeOETou3oNmhPQ" runnable="_H08ZLt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YlN9NEeOETou3oNmhPQ" runnable="_H08ZYt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yld9NEeOETou3oNmhPQ" runnable="_H08Za99NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ylt9NEeOETou3oNmhPQ" runnable="_H08aKN9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yl99NEeOETou3oNmhPQ" runnable="_H08Zdt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YmN9NEeOETou3oNmhPQ" runnable="_H08aPN9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ymd9NEeOETou3oNmhPQ" runnable="_H08aMd9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ymt9NEeOETou3oNmhPQ" runnable="_H08aV99NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ym99NEeOETou3oNmhPQ" runnable="_H08aTt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YnN9NEeOETou3oNmhPQ" runnable="_H08ZWd9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ynd9NEeOETou3oNmhPQ" runnable="_H08aYt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ynt9NEeOETou3oNmhPQ" runnable="_H08aAt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yn99NEeOETou3oNmhPQ" runnable="_H08Y0d9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YoN9NEeOETou3oNmhPQ" runnable="_H08Y299NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yod9NEeOETou3oNmhPQ" runnable="_H08Z-d9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yot9NEeOETou3oNmhPQ" runnable="_H08aFt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yo99NEeOETou3oNmhPQ" runnable="_H08aH99NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YpN9NEeOETou3oNmhPQ" runnable="_H08Z1t9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ypd9NEeOETou3oNmhPQ" runnable="_H08Zzd9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ypt9NEeOETou3oNmhPQ" runnable="_H08ZvN9NEeOETou3oNmhPQ"/>
+        </graphEntries>
+      </callGraph>
+    </tasks>
+    <tasks xmi:id="_H08Yp99NEeOETou3oNmhPQ" name="Task_20MS" priority="10" stimuli="_H1Fidt9NEeOETou3oNmhPQ" preemption="preemptive" multipleTaskActivationLimit="10">
+      <deadline xmi:id="_H08YqN9NEeOETou3oNmhPQ" value="20" unit="ms"/>
+      <callGraph xmi:id="_H08Yqd9NEeOETou3oNmhPQ">
+        <graphEntries xsi:type="sw:CallSequence" xmi:id="_H08Yqt9NEeOETou3oNmhPQ">
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yq99NEeOETou3oNmhPQ" runnable="_H08ZAt9NEeOETou3oNmhPQ"/>
+        </graphEntries>
+      </callGraph>
+    </tasks>
+    <tasks xmi:id="_H08YrN9NEeOETou3oNmhPQ" name="Task_5MS" priority="10" stimuli="_H1Fied9NEeOETou3oNmhPQ" preemption="preemptive" multipleTaskActivationLimit="10">
+      <deadline xmi:id="_H08Yrd9NEeOETou3oNmhPQ" value="5" unit="ms"/>
+      <callGraph xmi:id="_H08Yrt9NEeOETou3oNmhPQ">
+        <graphEntries xsi:type="sw:CallSequence" xmi:id="_H08Yr99NEeOETou3oNmhPQ">
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YsN9NEeOETou3oNmhPQ" runnable="_H08ZiN9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ysd9NEeOETou3oNmhPQ" runnable="_H08Zot9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yst9NEeOETou3oNmhPQ" runnable="_H08ZkN9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ys99NEeOETou3oNmhPQ" runnable="_H08Zmd9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YtN9NEeOETou3oNmhPQ" runnable="_H08Zqt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ytd9NEeOETou3oNmhPQ" runnable="_H08Zs99NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Ytt9NEeOETou3oNmhPQ" runnable="_H08Yxt9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08Yt99NEeOETou3oNmhPQ" runnable="_H08aDN9NEeOETou3oNmhPQ"/>
+          <calls xsi:type="sw:TaskRunnableCall" xmi:id="_H08YuN9NEeOETou3oNmhPQ" runnable="_H08Z599NEeOETou3oNmhPQ"/>
+        </graphEntries>
+      </callGraph>
+    </tasks>
+    <runnables xmi:id="_H08Yud9NEeOETou3oNmhPQ" tags="_H08a_d9NEeOETou3oNmhPQ" name="ABSCalculation">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Yut9NEeOETou3oNmhPQ" data="_H08a7N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Yu99NEeOETou3oNmhPQ" data="_H08a7t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08YvN9NEeOETou3oNmhPQ" data="_H08a8N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Yvd9NEeOETou3oNmhPQ" data="_H08aeN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08YwN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Ywd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Ywt9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Yw99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08YxN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Yxd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Yvt9NEeOETou3oNmhPQ" data="_H08abN9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Yv99NEeOETou3oNmhPQ" data="_H08abt9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Yxt9NEeOETou3oNmhPQ" tags="_H08bAt9NEeOETou3oNmhPQ" name="APedSensor">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Yx99NEeOETou3oNmhPQ" data="_H08adN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08YyN9NEeOETou3oNmhPQ" data="_H08adt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Yy99NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08YzN9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Yzd9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Yzt9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Yz99NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Y0N9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Yyd9NEeOETou3oNmhPQ" data="_H08acN9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Yyt9NEeOETou3oNmhPQ" data="_H08act9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Y0d9NEeOETou3oNmhPQ" tags="_H08a-t9NEeOETou3oNmhPQ" name="APedVoter">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y0t9NEeOETou3oNmhPQ" data="_H08acN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y099NEeOETou3oNmhPQ" data="_H08act9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Y1d9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Y1t9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Y199NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Y2N9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Y2d9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Y2t9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y1N9NEeOETou3oNmhPQ" data="_H08a6N9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Y299NEeOETou3oNmhPQ" tags="_H08a-t9NEeOETou3oNmhPQ" name="BaseFuelMass">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y3N9NEeOETou3oNmhPQ" data="_H08a0N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Y399NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Y4N9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Y4d9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Y4t9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Y499NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Y5N9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y3d9NEeOETou3oNmhPQ" data="_H08afN9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y3t9NEeOETou3oNmhPQ" data="_H08azN9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Y5d9NEeOETou3oNmhPQ" tags="_H08a_d9NEeOETou3oNmhPQ" name="BrakeActuator">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y5t9NEeOETou3oNmhPQ" data="_H08amt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Y6N9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Y6d9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Y6t9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Y699NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Y7N9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Y7d9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y599NEeOETou3oNmhPQ" data="_H08aht9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Y7t9NEeOETou3oNmhPQ" tags="_H08bAd9NEeOETou3oNmhPQ" name="BrakeActuatorMonitor">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y799NEeOETou3oNmhPQ" data="_H08agN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y8N9NEeOETou3oNmhPQ" data="_H08ahN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Y8d9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Y8t9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Y899NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Y9N9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Y9d9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Y9t9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_H08Y999NEeOETou3oNmhPQ" tags="_H08a_d9NEeOETou3oNmhPQ" name="BrakeForceActuation">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y-N9NEeOETou3oNmhPQ" data="_H08abN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y-d9NEeOETou3oNmhPQ" data="_H08abt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Y_N9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Y_d9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Y_t9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Y_99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZAN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZAd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y-t9NEeOETou3oNmhPQ" data="_H08agN9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Y-99NEeOETou3oNmhPQ" data="_H08agt9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZAt9NEeOETou3oNmhPQ" tags="_H08a_N9NEeOETou3oNmhPQ" name="BrakeForceArbiter">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZA99NEeOETou3oNmhPQ" data="_H08amN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZBN9NEeOETou3oNmhPQ" data="_H08alt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZBt9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZB99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZCN9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZCd9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZCt9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZC99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZBd9NEeOETou3oNmhPQ" data="_H08aeN9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZDN9NEeOETou3oNmhPQ" tags="_H08bAd9NEeOETou3oNmhPQ" name="BrakeForceCalculation">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZDd9NEeOETou3oNmhPQ" data="_H08ait9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZDt9NEeOETou3oNmhPQ" data="_H08ahN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZD99NEeOETou3oNmhPQ" data="_H08aet9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZEN9NEeOETou3oNmhPQ" data="_H08a0t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZEd9NEeOETou3oNmhPQ" data="_H08alN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZFN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZFd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZFt9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZF99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZGN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZGd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZEt9NEeOETou3oNmhPQ" data="_H08amN9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZE99NEeOETou3oNmhPQ" data="_H08aiN9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZGt9NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="BrakePedalSensorDiagnosis">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZG99NEeOETou3oNmhPQ" data="_H08akN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZHN9NEeOETou3oNmhPQ" data="_H08akt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZHd9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZHt9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZH99NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZIN9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZId9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZIt9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_H08ZI99NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="BrakePedalSensorTranslation">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZJN9NEeOETou3oNmhPQ" data="_H08akN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZJd9NEeOETou3oNmhPQ" data="_H08akt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZKN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZKd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZKt9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZK99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZLN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZLd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZJt9NEeOETou3oNmhPQ" data="_H08ajN9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZJ99NEeOETou3oNmhPQ" data="_H08ajt9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZLt9NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="BrakePedalSensorVoter">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZL99NEeOETou3oNmhPQ" data="_H08ajN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZMN9NEeOETou3oNmhPQ" data="_H08ajt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZMt9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZM99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZNN9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZNd9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZNt9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZN99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZMd9NEeOETou3oNmhPQ" data="_H08a6t9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZON9NEeOETou3oNmhPQ" tags="_H08bAd9NEeOETou3oNmhPQ" name="BrakeSafetyMonitor">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZOd9NEeOETou3oNmhPQ" data="_H08ait9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZOt9NEeOETou3oNmhPQ" data="_H08ahN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZO99NEeOETou3oNmhPQ" data="_H08aet9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZPN9NEeOETou3oNmhPQ" data="_H08a0t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZPd9NEeOETou3oNmhPQ" data="_H08aiN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZQN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZQd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZQt9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZQ99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZRN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZRd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZPt9NEeOETou3oNmhPQ" data="_H08alN9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZP99NEeOETou3oNmhPQ" data="_H08alt9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZRt9NEeOETou3oNmhPQ" tags="_H08a_d9NEeOETou3oNmhPQ" name="CaliperPositionCalculation">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZR99NEeOETou3oNmhPQ" data="_H08amt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZSN9NEeOETou3oNmhPQ" data="_H08agt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZSt9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZS99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZTN9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZTd9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZTt9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZT99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZSd9NEeOETou3oNmhPQ" data="_H08amt9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZUN9NEeOETou3oNmhPQ" tags="_H08bAd9NEeOETou3oNmhPQ" name="CheckPlausability">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZUd9NEeOETou3oNmhPQ" data="_H08a6t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZU99NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZVN9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZVd9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZVt9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZV99NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZWN9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZUt9NEeOETou3oNmhPQ" data="_H08ait9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZWd9NEeOETou3oNmhPQ" tags="_H08bAN9NEeOETou3oNmhPQ" name="CylNumObserver">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZWt9NEeOETou3oNmhPQ" data="_H08anN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZXN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZXd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZXt9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZX99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZYN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZYd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZW99NEeOETou3oNmhPQ" data="_H08a3t9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZYt9NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="DecelerationSensorDiagnosis">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZY99NEeOETou3oNmhPQ" data="_H08aot9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZZN9NEeOETou3oNmhPQ" data="_H08apN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZZd9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZZt9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZZ99NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZaN9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Zad9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Zat9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_H08Za99NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="DecelerationSensorTranslation">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZbN9NEeOETou3oNmhPQ" data="_H08aot9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zbd9NEeOETou3oNmhPQ" data="_H08apN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZcN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Zcd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Zct9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Zc99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZdN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Zdd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zbt9NEeOETou3oNmhPQ" data="_H08ant9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zb99NEeOETou3oNmhPQ" data="_H08aoN9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Zdt9NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="DecelerationSensorVoter">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zd99NEeOETou3oNmhPQ" data="_H08ant9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZeN9NEeOETou3oNmhPQ" data="_H08aoN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Zet9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Ze99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZfN9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Zfd9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Zft9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Zf99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zed9NEeOETou3oNmhPQ" data="_H08a7N9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZgN9NEeOETou3oNmhPQ" tags="_H08bAd9NEeOETou3oNmhPQ" name="DiagnosisArbiter">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zgd9NEeOETou3oNmhPQ" data="_H08aet9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Zgt9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Zg99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZhN9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Zhd9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Zht9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Zh99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_H08ZiN9NEeOETou3oNmhPQ" tags="_H08a-99NEeOETou3oNmhPQ" name="EcuBrakeActuator">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zid9NEeOETou3oNmhPQ" data="_H08aht9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Zit9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Zi99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZjN9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Zjd9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Zjt9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Zj99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_H08ZkN9NEeOETou3oNmhPQ" tags="_H08a_t9NEeOETou3oNmhPQ" name="EcuBrakePedalSensor">
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Zk99NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZlN9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Zld9NEeOETou3oNmhPQ" value="144000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Zlt9NEeOETou3oNmhPQ" value="176000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Zl99NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZmN9NEeOETou3oNmhPQ" value="160000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zkd9NEeOETou3oNmhPQ" data="_H08akN9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zkt9NEeOETou3oNmhPQ" data="_H08akt9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Zmd9NEeOETou3oNmhPQ" tags="_H08a_t9NEeOETou3oNmhPQ" name="EcuDecelerationSensor">
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZnN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Znd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Znt9NEeOETou3oNmhPQ" value="144000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Zn99NEeOETou3oNmhPQ" value="176000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZoN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Zod9NEeOETou3oNmhPQ" value="160000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zmt9NEeOETou3oNmhPQ" data="_H08aot9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zm99NEeOETou3oNmhPQ" data="_H08apN9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Zot9NEeOETou3oNmhPQ" tags="_H08a-99NEeOETou3oNmhPQ" name="EcuStopLightActuator">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zo99NEeOETou3oNmhPQ" data="_H08aft9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08ZpN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Zpd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Zpt9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Zp99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08ZqN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Zqd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_H08Zqt9NEeOETou3oNmhPQ" tags="_H08a_t9NEeOETou3oNmhPQ" name="EcuVehicleSpeedSensor">
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Zrd9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Zrt9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Zr99NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08ZsN9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Zsd9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Zst9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zq99NEeOETou3oNmhPQ" data="_H08a5N9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZrN9NEeOETou3oNmhPQ" data="_H08a5t9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Zs99NEeOETou3oNmhPQ" tags="_H08a_t9NEeOETou3oNmhPQ" name="EcuWheelSpeedSensor">
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Ztt9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Zt99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08ZuN9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Zud9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Zut9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Zu99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZtN9NEeOETou3oNmhPQ" data="_H08a9t9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Ztd9NEeOETou3oNmhPQ" data="_H08a-N9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08ZvN9NEeOETou3oNmhPQ" tags="_H08bA99NEeOETou3oNmhPQ" name="IgnitionTimeActuation">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zvd9NEeOETou3oNmhPQ" data="_H08a3t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zvt9NEeOETou3oNmhPQ" data="_H08aqt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zv99NEeOETou3oNmhPQ" data="_H08arN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZwN9NEeOETou3oNmhPQ" data="_H08art9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zwd9NEeOETou3oNmhPQ" data="_H08asN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zwt9NEeOETou3oNmhPQ" data="_H08ast9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zw99NEeOETou3oNmhPQ" data="_H08atN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08ZxN9NEeOETou3oNmhPQ" data="_H08att9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Zx99NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08ZyN9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Zyd9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Zyt9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Zy99NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08ZzN9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zxd9NEeOETou3oNmhPQ" data="_H08auN9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zxt9NEeOETou3oNmhPQ" data="_H08aut9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Zzd9NEeOETou3oNmhPQ" tags="_H08a-t9NEeOETou3oNmhPQ" name="IgnitionTiming">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zzt9NEeOETou3oNmhPQ" data="_H08azN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Z0N9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Z0d9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Z0t9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Z099NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Z1N9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Z1d9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Zz99NEeOETou3oNmhPQ" data="_H08aqt9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Z1t9NEeOETou3oNmhPQ" tags="_H08bA99NEeOETou3oNmhPQ" name="InjectionTimeActuation">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z199NEeOETou3oNmhPQ" data="_H08a3t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z2N9NEeOETou3oNmhPQ" data="_H08a2t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z2d9NEeOETou3oNmhPQ" data="_H08avN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z2t9NEeOETou3oNmhPQ" data="_H08avt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z299NEeOETou3oNmhPQ" data="_H08awN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z3N9NEeOETou3oNmhPQ" data="_H08awt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z3d9NEeOETou3oNmhPQ" data="_H08axN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z3t9NEeOETou3oNmhPQ" data="_H08axt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z399NEeOETou3oNmhPQ" data="_H08ayN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z4N9NEeOETou3oNmhPQ" data="_H08ayt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Z4d9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Z4t9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Z499NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Z5N9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Z5d9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Z5t9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_H08Z599NEeOETou3oNmhPQ" tags="_H08bAt9NEeOETou3oNmhPQ" name="MassAirFlowSensor">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z6N9NEeOETou3oNmhPQ" data="_H08azt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Z6t9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Z699NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Z7N9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Z7d9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Z7t9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Z799NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z6d9NEeOETou3oNmhPQ" data="_H08a0N9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Z8N9NEeOETou3oNmhPQ" tags="_H08a_d9NEeOETou3oNmhPQ" name="StopLightActuator">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z8d9NEeOETou3oNmhPQ" data="_H08aeN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Z899NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Z9N9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Z9d9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Z9t9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08Z999NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08Z-N9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z8t9NEeOETou3oNmhPQ" data="_H08aft9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08Z-d9NEeOETou3oNmhPQ" tags="_H08a-t9NEeOETou3oNmhPQ" name="ThrottleActuator">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z-t9NEeOETou3oNmhPQ" data="_H08apt9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08Z_N9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08Z_d9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08Z_t9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08Z_99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aAN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aAd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08Z-99NEeOETou3oNmhPQ" data="_H08aqN9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08aAt9NEeOETou3oNmhPQ" tags="_H08a-t9NEeOETou3oNmhPQ" name="ThrottleController">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aA99NEeOETou3oNmhPQ" data="_H08a6N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aBN9NEeOETou3oNmhPQ" data="_H08a1N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aBt9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aB99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aCN9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aCd9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aCt9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aC99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aBd9NEeOETou3oNmhPQ" data="_H08apt9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08aDN9NEeOETou3oNmhPQ" tags="_H08bAt9NEeOETou3oNmhPQ" name="ThrottleSensor">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aDd9NEeOETou3oNmhPQ" data="_H08a1t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aDt9NEeOETou3oNmhPQ" data="_H08a2N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aEN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aEd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aEt9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aE99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aFN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aFd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aD99NEeOETou3oNmhPQ" data="_H08a1N9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08aFt9NEeOETou3oNmhPQ" tags="_H08a-t9NEeOETou3oNmhPQ" name="TotalFuelMass">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aF99NEeOETou3oNmhPQ" data="_H08a3N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aGd9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aGt9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aG99NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aHN9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aHd9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aHt9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aGN9NEeOETou3oNmhPQ" data="_H08a2t9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08aH99NEeOETou3oNmhPQ" tags="_H08a-t9NEeOETou3oNmhPQ" name="TransientFuelMass">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aIN9NEeOETou3oNmhPQ" data="_H08afN9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aIt9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aI99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aJN9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aJd9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aJt9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aJ99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aId9NEeOETou3oNmhPQ" data="_H08a3N9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08aKN9NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="VehicleSpeedSensorDiagnosis">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aKd9NEeOETou3oNmhPQ" data="_H08a5N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aKt9NEeOETou3oNmhPQ" data="_H08a5t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aK99NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aLN9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aLd9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aLt9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aL99NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aMN9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_H08aMd9NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="VehicleSpeedSensorTranslation">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aMt9NEeOETou3oNmhPQ" data="_H08a5N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aM99NEeOETou3oNmhPQ" data="_H08a5t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aNt9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aN99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aON9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aOd9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aOt9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aO99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aNN9NEeOETou3oNmhPQ" data="_H08a4N9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aNd9NEeOETou3oNmhPQ" data="_H08a4t9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08aPN9NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="VehicleSpeedSensorVoter">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aPd9NEeOETou3oNmhPQ" data="_H08a4N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aPt9NEeOETou3oNmhPQ" data="_H08a4t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aQN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aQd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aQt9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aQ99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aRN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aRd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aP99NEeOETou3oNmhPQ" data="_H08a7t9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08aRt9NEeOETou3oNmhPQ" tags="_H08bAd9NEeOETou3oNmhPQ" name="VehicleStateMonitor">
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aSN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aSd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aSt9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aS99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aTN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aTd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aR99NEeOETou3oNmhPQ" data="_H08a0t9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08aTt9NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="WheelSpeedSensorDiagnosis">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aT99NEeOETou3oNmhPQ" data="_H08a9t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aUN9NEeOETou3oNmhPQ" data="_H08a-N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aUd9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aUt9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aU99NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aVN9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aVd9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aVt9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+    </runnables>
+    <runnables xmi:id="_H08aV99NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="WheelSpeedSensorTranslation">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aWN9NEeOETou3oNmhPQ" data="_H08a9t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aWd9NEeOETou3oNmhPQ" data="_H08a-N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aXN9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aXd9NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aXt9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aX99NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aYN9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aYd9NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aWt9NEeOETou3oNmhPQ" data="_H08a8t9NEeOETou3oNmhPQ" access="write"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aW99NEeOETou3oNmhPQ" data="_H08a9N9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <runnables xmi:id="_H08aYt9NEeOETou3oNmhPQ" tags="_H08a_99NEeOETou3oNmhPQ" name="WheelSpeedSensorVoter">
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aY99NEeOETou3oNmhPQ" data="_H08a8t9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aZN9NEeOETou3oNmhPQ" data="_H08a9N9NEeOETou3oNmhPQ"/>
+      <runnableItems xsi:type="sw:InstructionsDeviation" xmi:id="_H08aZt9NEeOETou3oNmhPQ">
+        <deviation xmi:id="_H08aZ99NEeOETou3oNmhPQ">
+          <lowerBound xsi:type="common:LongObject" xmi:id="_H08aaN9NEeOETou3oNmhPQ" value="72000"/>
+          <upperBound xsi:type="common:LongObject" xmi:id="_H08aad9NEeOETou3oNmhPQ" value="88000"/>
+          <distribution xsi:type="common:WeibullEstimators" xmi:id="_H08aat9NEeOETou3oNmhPQ" pRemainPromille="0.5">
+            <mean xsi:type="common:LongObject" xmi:id="_H08aa99NEeOETou3oNmhPQ" value="80000"/>
+          </distribution>
+        </deviation>
+      </runnableItems>
+      <runnableItems xsi:type="sw:LabelAccess" xmi:id="_H08aZd9NEeOETou3oNmhPQ" data="_H08a8N9NEeOETou3oNmhPQ" access="write"/>
+    </runnables>
+    <labels xmi:id="_H08abN9NEeOETou3oNmhPQ" name="ABSActivation">
+      <size xmi:id="_H08abd9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08abt9NEeOETou3oNmhPQ" name="ABSMode">
+      <size xmi:id="_H08ab99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08acN9NEeOETou3oNmhPQ" name="APedPosition1">
+      <size xmi:id="_H08acd9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08act9NEeOETou3oNmhPQ" name="APedPosition2">
+      <size xmi:id="_H08ac99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08adN9NEeOETou3oNmhPQ" name="APedSensor1Voltage">
+      <size xmi:id="_H08add9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08adt9NEeOETou3oNmhPQ" name="APedSensor2Voltage">
+      <size xmi:id="_H08ad99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08aeN9NEeOETou3oNmhPQ" name="ArbitratedBrakeForce">
+      <size xmi:id="_H08aed9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08aet9NEeOETou3oNmhPQ" name="ArbitratedDiagnosisRequest">
+      <size xmi:id="_H08ae99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08afN9NEeOETou3oNmhPQ" name="BaseFuelMassPerStroke">
+      <size xmi:id="_H08afd9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08aft9NEeOETou3oNmhPQ" name="BrakeApplication">
+      <size xmi:id="_H08af99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08agN9NEeOETou3oNmhPQ" name="BrakeForce">
+      <size xmi:id="_H08agd9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08agt9NEeOETou3oNmhPQ" name="BrakeForceCurrent">
+      <size xmi:id="_H08ag99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08ahN9NEeOETou3oNmhPQ" name="BrakeForceFeedback">
+      <size xmi:id="_H08ahd9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08aht9NEeOETou3oNmhPQ" name="BrakeForceVoltage">
+      <size xmi:id="_H08ah99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08aiN9NEeOETou3oNmhPQ" name="BrakeMonitorLevel">
+      <size xmi:id="_H08aid9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08ait9NEeOETou3oNmhPQ" name="BrakePedalPosition">
+      <size xmi:id="_H08ai99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08ajN9NEeOETou3oNmhPQ" name="BrakePedalPosition1">
+      <size xmi:id="_H08ajd9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08ajt9NEeOETou3oNmhPQ" name="BrakePedalPosition2">
+      <size xmi:id="_H08aj99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08akN9NEeOETou3oNmhPQ" name="BrakePedalPositionVoltage1">
+      <size xmi:id="_H08akd9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08akt9NEeOETou3oNmhPQ" name="BrakePedalPositionVoltage2">
+      <size xmi:id="_H08ak99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08alN9NEeOETou3oNmhPQ" name="BrakeSafetyLevel">
+      <size xmi:id="_H08ald9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08alt9NEeOETou3oNmhPQ" name="BrakeSafetyState">
+      <size xmi:id="_H08al99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08amN9NEeOETou3oNmhPQ" name="CalculatedBrakeForce">
+      <size xmi:id="_H08amd9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08amt9NEeOETou3oNmhPQ" name="CaliperPosition">
+      <size xmi:id="_H08am99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08anN9NEeOETou3oNmhPQ" name="CylinderNumber">
+      <size xmi:id="_H08and9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08ant9NEeOETou3oNmhPQ" name="DecelerationRate1">
+      <size xmi:id="_H08an99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08aoN9NEeOETou3oNmhPQ" name="DecelerationRate2">
+      <size xmi:id="_H08aod9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08aot9NEeOETou3oNmhPQ" name="DecelerationVoltage1">
+      <size xmi:id="_H08ao99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08apN9NEeOETou3oNmhPQ" name="DecelerationVoltage2">
+      <size xmi:id="_H08apd9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08apt9NEeOETou3oNmhPQ" name="DesiredThrottlePosition">
+      <size xmi:id="_H08ap99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08aqN9NEeOETou3oNmhPQ" name="DesiredThrottlePositionVoltage">
+      <size xmi:id="_H08aqd9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08aqt9NEeOETou3oNmhPQ" name="IgnitionTime">
+      <size xmi:id="_H08aq99NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08arN9NEeOETou3oNmhPQ" name="IgnitionTime1">
+      <size xmi:id="_H08ard9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08art9NEeOETou3oNmhPQ" name="IgnitionTime2">
+      <size xmi:id="_H08ar99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08asN9NEeOETou3oNmhPQ" name="IgnitionTime3">
+      <size xmi:id="_H08asd9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08ast9NEeOETou3oNmhPQ" name="IgnitionTime4">
+      <size xmi:id="_H08as99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08atN9NEeOETou3oNmhPQ" name="IgnitionTime5">
+      <size xmi:id="_H08atd9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08att9NEeOETou3oNmhPQ" name="IgnitionTime6">
+      <size xmi:id="_H08at99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08auN9NEeOETou3oNmhPQ" name="IgnitionTime7">
+      <size xmi:id="_H08aud9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08aut9NEeOETou3oNmhPQ" name="IgnitionTime8">
+      <size xmi:id="_H08au99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08avN9NEeOETou3oNmhPQ" name="InjectionTime1">
+      <size xmi:id="_H08avd9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08avt9NEeOETou3oNmhPQ" name="InjectionTime2">
+      <size xmi:id="_H08av99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08awN9NEeOETou3oNmhPQ" name="InjectionTime3">
+      <size xmi:id="_H08awd9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08awt9NEeOETou3oNmhPQ" name="InjectionTime4">
+      <size xmi:id="_H08aw99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08axN9NEeOETou3oNmhPQ" name="InjectionTime5">
+      <size xmi:id="_H08axd9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08axt9NEeOETou3oNmhPQ" name="InjectionTime6">
+      <size xmi:id="_H08ax99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08ayN9NEeOETou3oNmhPQ" name="InjectionTime7">
+      <size xmi:id="_H08ayd9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08ayt9NEeOETou3oNmhPQ" name="InjectionTime8">
+      <size xmi:id="_H08ay99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08azN9NEeOETou3oNmhPQ" name="MAFRate">
+      <size xmi:id="_H08azd9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08azt9NEeOETou3oNmhPQ" name="MAFSensorVoltage">
+      <size xmi:id="_H08az99NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08a0N9NEeOETou3oNmhPQ" name="MassAirFlow">
+      <size xmi:id="_H08a0d9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a0t9NEeOETou3oNmhPQ" name="MonitoredVehicleState">
+      <size xmi:id="_H08a099NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a1N9NEeOETou3oNmhPQ" name="ThrottlePosition">
+      <size xmi:id="_H08a1d9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08a1t9NEeOETou3oNmhPQ" name="ThrottleSensor1Voltage">
+      <size xmi:id="_H08a199NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a2N9NEeOETou3oNmhPQ" name="ThrottleSensor2Voltage">
+      <size xmi:id="_H08a2d9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a2t9NEeOETou3oNmhPQ" name="TotalFuelMassPerStroke">
+      <size xmi:id="_H08a299NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a3N9NEeOETou3oNmhPQ" name="TransientFuelMassPerStroke">
+      <size xmi:id="_H08a3d9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a3t9NEeOETou3oNmhPQ" name="TriggeredCylinderNumber">
+      <size xmi:id="_H08a399NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a4N9NEeOETou3oNmhPQ" name="VehicleSpeed1">
+      <size xmi:id="_H08a4d9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a4t9NEeOETou3oNmhPQ" name="VehicleSpeed2">
+      <size xmi:id="_H08a499NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a5N9NEeOETou3oNmhPQ" name="VehicleSpeedVoltage1">
+      <size xmi:id="_H08a5d9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08a5t9NEeOETou3oNmhPQ" name="VehicleSpeedVoltage2">
+      <size xmi:id="_H08a599NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08a6N9NEeOETou3oNmhPQ" name="VotedAPedPosition">
+      <size xmi:id="_H08a6d9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a6t9NEeOETou3oNmhPQ" name="VotedBrakePedalPosition">
+      <size xmi:id="_H08a699NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a7N9NEeOETou3oNmhPQ" name="VotedDecelerationRate">
+      <size xmi:id="_H08a7d9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a7t9NEeOETou3oNmhPQ" name="VotedVehicleSpeed">
+      <size xmi:id="_H08a799NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a8N9NEeOETou3oNmhPQ" name="VotedWheelSpeed">
+      <size xmi:id="_H08a8d9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a8t9NEeOETou3oNmhPQ" name="WheelSpeed1">
+      <size xmi:id="_H08a899NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a9N9NEeOETou3oNmhPQ" name="WheelSpeed2">
+      <size xmi:id="_H08a9d9NEeOETou3oNmhPQ" numberBits="8"/>
+    </labels>
+    <labels xmi:id="_H08a9t9NEeOETou3oNmhPQ" name="WheelSpeedVoltage1">
+      <size xmi:id="_H08a999NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <labels xmi:id="_H08a-N9NEeOETou3oNmhPQ" name="WheelSpeedVoltage2">
+      <size xmi:id="_H08a-d9NEeOETou3oNmhPQ" numberBits="16"/>
+    </labels>
+    <tags xmi:id="_H08a-t9NEeOETou3oNmhPQ" tagName="SwcEngineController" tagType="SOFTWARE_COMPONENT"/>
+    <tags xmi:id="_H08a-99NEeOETou3oNmhPQ" tagName="SwcActuators" tagType="SOFTWARE_COMPONENT"/>
+    <tags xmi:id="_H08a_N9NEeOETou3oNmhPQ" tagName="SwcBrakeForceArbiter" tagType="SOFTWARE_COMPONENT"/>
+    <tags xmi:id="_H08a_d9NEeOETou3oNmhPQ" tagName="SwcABSCalculation" tagType="SOFTWARE_COMPONENT"/>
+    <tags xmi:id="_H08a_t9NEeOETou3oNmhPQ" tagName="SwcSensors" tagType="SOFTWARE_COMPONENT"/>
+    <tags xmi:id="_H08a_99NEeOETou3oNmhPQ" tagName="SwcSensorPostprocessing" tagType="SOFTWARE_COMPONENT"/>
+    <tags xmi:id="_H08bAN9NEeOETou3oNmhPQ" tagName="SwcCylNumObserver" tagType="SOFTWARE_COMPONENT"/>
+    <tags xmi:id="_H08bAd9NEeOETou3oNmhPQ" tagName="SwcBrakeForceCalculation" tagType="SOFTWARE_COMPONENT"/>
+    <tags xmi:id="_H08bAt9NEeOETou3oNmhPQ" tagName="SwcEngineSensors" tagType="SOFTWARE_COMPONENT"/>
+    <tags xmi:id="_H08bA99NEeOETou3oNmhPQ" tagName="SwcInjIgnActuation" tagType="SOFTWARE_COMPONENT"/>
+  </swModel>
+  <hwModel xmi:id="_H08bBN9NEeOETou3oNmhPQ">
+    <coreTypes xmi:id="_H08bBd9NEeOETou3oNmhPQ" name="Default" instructionsPerCycle="1"/>
+    <system xmi:id="_H08bBt9NEeOETou3oNmhPQ" name="Democar">
+      <ecus xmi:id="_H08bB99NEeOETou3oNmhPQ" name="ECU_1">
+        <quartzes xmi:id="_H08bCN9NEeOETou3oNmhPQ" name="QuartzOscillator_1" frequency="200000000" type="STATIC"/>
+        <microcontrollers xmi:id="_H08bCd9NEeOETou3oNmhPQ" name="Processor_1">
+          <memories xmi:id="_H08bCt9NEeOETou3oNmhPQ" name="Mem_1">
+            <ports xsi:type="hw:ComplexPort" xmi:id="_H08bC99NEeOETou3oNmhPQ" name="Mem_1_port" bitWidth="16" writeCycles="10" readCycles="10"/>
+          </memories>
+          <cores xmi:id="_H08bDN9NEeOETou3oNmhPQ" name="Core_1" coreType="_H08bBd9NEeOETou3oNmhPQ">
+            <prescaler xmi:id="_H08bDd9NEeOETou3oNmhPQ" name="Core_1_prescaler" quartz="_H08bCN9NEeOETou3oNmhPQ"/>
+          </cores>
+        </microcontrollers>
+      </ecus>
+    </system>
+  </hwModel>
+  <osModel xmi:id="_H08bDt9NEeOETou3oNmhPQ">
+    <scheduler xmi:id="_H08bD99NEeOETou3oNmhPQ" name="Task_Scheduler_Core_1">
+      <schedulingAlgorithm xsi:type="os:OSEK" xmi:id="_H08bEN9NEeOETou3oNmhPQ"/>
+      <schedulingUnit xsi:type="os:SchedulingHWUnit" xmi:id="_H1FicN9NEeOETou3oNmhPQ">
+        <delay xmi:id="_H1Ficd9NEeOETou3oNmhPQ" value="1" unit="ns"/>
+      </schedulingUnit>
+    </scheduler>
+  </osModel>
+  <stimuliModel xmi:id="_H1Fict9NEeOETou3oNmhPQ">
+    <stimuli xsi:type="stimuli:Periodic" xmi:id="_H1Fic99NEeOETou3oNmhPQ" name="Timer_10MS">
+      <offset xmi:id="_H1FidN9NEeOETou3oNmhPQ" unit="ms"/>
+      <recurrence xmi:id="_H1Fidd9NEeOETou3oNmhPQ" value="10" unit="ms"/>
+    </stimuli>
+    <stimuli xsi:type="stimuli:Periodic" xmi:id="_H1Fidt9NEeOETou3oNmhPQ" name="Timer_20MS">
+      <offset xmi:id="_H1Fid99NEeOETou3oNmhPQ" unit="ms"/>
+      <recurrence xmi:id="_H1FieN9NEeOETou3oNmhPQ" value="20" unit="ms"/>
+    </stimuli>
+    <stimuli xsi:type="stimuli:Periodic" xmi:id="_H1Fied9NEeOETou3oNmhPQ" name="Timer_5MS">
+      <offset xmi:id="_H1Fiet9NEeOETou3oNmhPQ" unit="ms"/>
+      <recurrence xmi:id="_H1Fie99NEeOETou3oNmhPQ" value="5" unit="ms"/>
+    </stimuli>
+  </stimuliModel>
+</central:AMALTHEA>
