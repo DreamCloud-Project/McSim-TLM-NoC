@@ -51,6 +51,7 @@ The requirements for using both script are the following ones:
 
 Compilation is done through the compile.py script which documentation is the following:  
 
+```
 >> compile.py build -h  
 usage: compile.py build [-h] [-c] [-v]
 
@@ -58,6 +59,7 @@ optional arguments:
   -h, --help     show this help message and exit  
   -c, --clean    clean previously compiled files before compiling  
   -v, --verbose  enable verbose output  
+```
 
 ### Running the simulator
 
