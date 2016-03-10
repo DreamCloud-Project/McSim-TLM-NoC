@@ -46,8 +46,6 @@ The requirements for using both script are the following ones:
 - define the SYSTEMC_HOME variable pointing to a SystemC 2.3.1 root folder
 - have the xerces-c-dev library installed in standard includes and libs folders (using apt-get for example)
   or have xerces-c-dev library in a custom folder and define XERCES_HOME
-- have the libboost-dev library installed in standard includes and libs folders (using apt-get for example)
-  or have libboost-dev library in a custom folder and define BOOST_HOME
 
 ### Compiling the simulator
 
@@ -69,11 +67,12 @@ a 4x4 NoC using ZigZag mapping, First Come First Serve (fcfs)
 scheduling and without repeating periodic runnables.  You can play
 with all these parameters which documentation is the following:
 
+```
 >> ./simulate.py -h  
 usage: simulate.py [-h] [-d]  
                    [-da {DC,CSE} | -ca CUSTOM_APPLICATION | -mf MODES_FILE]  
                    [-i ITERATIONS] [-m {ZigZag,MinComm,KhalidDC}]  
-                   [-o OUTPUT_FOLDER] [-s {fcfs,prio}] [-x ROWS] [-y COLS]  
+                   [-o OUTPUT_FOLDER] [-s {fcfs,prio}] [-x ROWS] [-y COLS]
 
 Abstract Simulator Runner script  
 
@@ -106,6 +105,7 @@ optional arguments:
                         choose the runnable to execute  
   -x ROWS, --rows ROWS  specify the number of rows in the NoC  
   -y COLS, --cols COLS  specify the number of columns in the NoC  
+```
 
 ## Licence
 
