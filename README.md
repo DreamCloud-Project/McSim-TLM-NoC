@@ -2,7 +2,6 @@
 
 This repository contains the simulator used to simulate embedded applications described using
 the Amalthea application model on top of NoC-based architectures. 
-Follow the steps below to run a simulation.
 
 ## Directory content
 
@@ -133,5 +132,5 @@ This software is made available under the Apache Software License. Version 2.0
 
 Report bugs at: dreamcloud-support@lirmm.fr  
 
-(C)2015 CNRS LIRMM and University of York  
-Adac Group LIRMM and Real-Time System Reasearch Group
+(C)2015 CNRS LIRMM / Université de Montpellier and University of York  
+ADAC Group LIRMM and Real-Time System Reasearch Group
