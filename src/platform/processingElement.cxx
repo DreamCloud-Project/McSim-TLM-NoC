@@ -373,7 +373,7 @@ void processingElement::runnableExecuter_thread() {
 			int prio;
 			if (sched == PRIO) {
 				prio = newRunnable->getRunCall()->GetPriority();
-			} else if (sched == FCFS) {
+			} else {//if (sched == FCFS) {
 				prio = newRunnable->GetMappingTime();
 			}
 			runnableExecElement execElement;
