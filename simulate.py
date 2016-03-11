@@ -144,7 +144,7 @@ def main():
          my_env['LD_LIBRARY_PATH'] = my_env.get('LD_LIBRARY_PATH', '') + ':' + xerces_home + '/lib'
 
     # Run the simulation
-    cmd = [os.path.dirname(os.path.realpath(__file__)) + '/obj/abstract_simulator', '-i', str(its), '-m', mapping]
+    cmd = [os.path.dirname(os.path.realpath(__file__)) + '/obj/mcsim-tlm-noc', '-i', str(its), '-m', mapping]
     if mappingFile:
         cmd.append(mappingFile)
     if mappingSeed:
