@@ -1,7 +1,16 @@
 # abstract-simulator
 
 This repository contains the simulator used to simulate embedded applications described using
-the Amalthea application model on top of NoC-based architectures. 
+the Amalthea application model on top of NoC-based architectures. To get the simulator you must clone this repository and its submodules using the following commands:
+
+```
+# if you have an GitHub account with an SSH key registered
+git clone git@github.com:DreamCloud-Project/abstract-simulator.git 
+# else
+git clone https://github.com/DreamCloud-Project/abstract-simulator.git
+git submodule init 
+git submodule update
+```
 
 ## Directory content
 
