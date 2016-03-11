@@ -23,12 +23,12 @@
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_ARGUMENTS" value="-o ${project_loc}/OUTPUT_FILES -a ${project_loc}/apps/DEMO_CAR/Old/DEMO_CAR.amxmi -m ZigZag -s fcfs -x 4 -y 4 -i 1 -np -fd -freq 1000000000"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="abstract-simulator-debug/abstract-simu-debug"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="abstract-noc-simulator"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="mcsim-tlm-noc"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="cdt.managedbuild.config.gnu.exe.debug.1134518697"/>
 <booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="true"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/abstract-noc-simulator"/>
+<listEntry value="/mcsim-tlm-noc"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>

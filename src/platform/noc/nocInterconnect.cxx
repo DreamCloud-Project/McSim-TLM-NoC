@@ -10,8 +10,8 @@
 #include "nocInterconnect.hxx"
 #include "../dcConfiguration.hxx"
 #include "../dcConfiguration.hxx"
-#include "../simulators-commons/utils/dcVector.hxx"
-#include "../simulators-commons/utils/Math.hxx"
+#include "../commons/utils/dcVector.hxx"
+#include "../commons/utils/Math.hxx"
 
 #define DBG_NOC( x ) //
 

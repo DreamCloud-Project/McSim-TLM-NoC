@@ -19,9 +19,9 @@
 #include "dcConfiguration.hxx"
 #include "dcSimuParams.hxx"
 #include "processingElementType.hxx"
-#include "simulators-commons/parser/dcAmaltheaParser.h"
-#include "simulators-commons/parser/dcApplication.h"
-#include "simulators-commons/parser/dcRunnableInstance.h"
+#include "commons/parser/dcAmaltheaParser.h"
+#include "commons/parser/dcApplication.h"
+#include "commons/parser/dcRunnableInstance.h"
 
 namespace dreamcloud {
 namespace platform_sclib {
