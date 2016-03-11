@@ -1,9 +1,9 @@
-# abstract-simulator
+# McSim - NoC-based platform Transactional Level Modeling simulator
 
 This repository contains the simulator used to simulate embedded applications described using
 the Amalthea application model on top of NoC-based architectures. 
 
-To get the simulator you must clone this repository and its submodules. To clone the repository if you have an GitHub account with an SSH key registered use `git clone git@github.com:DreamCloud-Project/abstract-noc-simulator.git`. Else use `git clone https://github.com/DreamCloud-Project/abstract-noc-simulator.git`. Then use `git submodule init` followed by `git submodule update` to clone submodules.
+To get the simulator you must clone this repository and its submodules. To clone the repository if you have an GitHub account with an SSH key registered use `git clone git@github.com:DreamCloud-Project/McSim-TLM-NoC.git.git`. Else use `git clone https://github.com/DreamCloud-Project/McSim-TLM-NoC.git.git`. Then use `git submodule init` followed by `git submodule update` to clone submodules.
 
 ## Directory content
 
@@ -132,6 +132,6 @@ optional arguments:
 
 This software is made available under the  GNU Lesser General Public License v3.0
 
-Report bugs at: dreamcloud-support@lirmm.fr  
+Report bugs at: mcsim-support@lirmm.fr  
 
 (C)2015 CNRS LIRMM / Université de Montpellier and University of York  
