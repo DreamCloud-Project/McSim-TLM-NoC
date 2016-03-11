@@ -5,36 +5,6 @@ the [AMALTHEA](http://www.amalthea-project.org/) application model on top of NoC
 
 To get the simulator you must clone this repository and its submodules. To clone the repository if you have an GitHub account with an SSH key registered use `git clone git@github.com:DreamCloud-Project/McSim-TLM-NoC.git`. Else use `git clone https://github.com/DreamCloud-Project/McSim-TLM-NoC.git`. Then use `git submodule init` followed by `git submodule update` to clone submodules.
 
-## Directory content
-
-- compile.py  
-	Compiles the simulator and the energy estimator from the src folder (see using the simulator section below)
-
-- OUTPUT_FILES  
-	Default directory where the simulate.py script generates the results of simulation. It contains:  
-		Instruction_fixed_Power.txt - Internal file used by energy estimator  
-		Label_accesses_Power.txt - Internal file used by energy estimator  
-		Mapping.csv - Runnables to cores mapping location  
-		OUTPUT_CORE_WAVE.vcd - Waveform showing runnables activation along time and cores  
-		OUTPUT_Energy.log - Main file showing energy estimation results  
-		OUTPUT_Execution_Report.log - Reporting of the simulation as shown on stdout when running simulate.py  
-		OUTPUT_NoC_Traces.csv - Information about packets transferred through the NoC  
-		OUTPUT_RUNNABLE_IDs.csv - Internal file used by energy estimator  
-		OUTPUT_Runnable_Traces.csv - Information about runnables activation in a CSV format  
-		Parameters.txt - Internal file used by energy estimator  
-		Runnables.txt - Internal file used by energy estimator  
-		dcRunGraphFile.gv - Graphviz file of the application at runnables level  
-		dcTasksGraphFile.gv - Graphviz file of the application at task level  
-
-- README  
-	This file  
-
-- simulate.py  
-	Runs the simulator using the provided arguments (see using the simulator section below)  
-
-- src  
-	Contains the source code for the platform and for the energy estimator  
-
 ## Using the simulator
 
 To ease the usage of the simulator, two python scripts are provided:  
