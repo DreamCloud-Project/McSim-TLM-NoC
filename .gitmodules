@@ -1,3 +1,0 @@
-[submodule "src/platform/simulators-commons"]
-	path = src/platform/simulators-commons
-	url = git@github.com:DreamCloud-Project/simulators-commons.git
