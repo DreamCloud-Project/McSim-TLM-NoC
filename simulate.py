@@ -35,7 +35,7 @@ class ValidateMapping(argparse.Action):
         if not mapping in MAPPINGS:
              raise ValueError('invalid mapping {s!r}'.format(s=mapping))
         mappingFile = None
-        if mapping.startswith('Static') or mapping.startswith('Weka'):
+        if mapping.startswith('Static'):
             if len(values) == 1:
                  raise ValueError('{s!r} mapping requires a file option'.format(s=mapping))
             mappingFile = values[1]
@@ -167,9 +167,6 @@ def main():
          cmd.append('-fd')
     if args.random:
          cmd.append('-r')
-    if args.wekaFile:
-         cmd.append('-wekaFile')
-         cmd.append(args.wekaFile)
     if args.verbose:
         cmdStr = ''
         for s in cmd:
