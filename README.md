@@ -1,4 +1,4 @@
-# McSim - NoC-based platform Transactional Level Modeling simulator
+# McSim-TLM-NoC : Manycore platform Simulation tool for NoC-based platform at a Transactional Level Modeling level
 
 This repository contains a simulator able to simulate embedded applications described using
 the [AMALTHEA](http://www.amalthea-project.org/) application model on top of NoC-based architectures at TLM level.
