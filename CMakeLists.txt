@@ -15,6 +15,8 @@ foreach (_headerFile ${simu_HEADERS})
 endforeach()
 list(REMOVE_DUPLICATES simu_INCLUDE_DIRS)
 
+add_executable (energy_estimator ${nrj_SOURCES})
+
 include_directories(${simu_INCLUDE_DIRS})
 include_directories($ENV{SYSTEMC_HOME}/include)
 include_directories($ENV{XERCES_HOME}/include)
@@ -22,4 +24,3 @@ link_directories($ENV{SYSTEMC_HOME}/lib-linux64)
 link_directories($ENV{XERCES_HOME}/lib)
 link_libraries(systemc xerces-c)
 add_executable (mcsim-tlm-noc ${simu_SOURCES})
-add_executable (energy_estimator ${nrj_SOURCES})
