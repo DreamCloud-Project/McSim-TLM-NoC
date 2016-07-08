@@ -7,7 +7,7 @@
 #include <string>
 #include <iostream>
 
-//#define DEBUG 1
+#define DEBUG 1
 
 //inst_complex_min and inst_complex_max must lie between 0 and 9 (inclusively)
 int Select_complexity_inst(int inst_complex_min, int inst_complex_max)
@@ -107,15 +107,19 @@ int Check_presence(char** Runnables_Name_Idx_buffer, char* Runnable_name, int i)
 }
 
 //Get the index of the string Runnable_name in the array Runnables_Name_Idx
-int Get_Runnable_idx(char** Runnables_Name_Idx, char* Runnable_name)
+int Get_Runnable_idx(char** Runnables_Name_Idx, char* Runnable_name, int nbRunnables)
 {
   int counter = 0;
   int found = 0;
-  while(!found)
+  while(!found && counter < nbRunnables)
     {
       found = (strcmp(Runnables_Name_Idx[counter],Runnable_name)==0);
       counter++;
     }
+  if (!found) {
+	  fprintf(stderr, "index of runnable %s not found !\n", Runnable_name);
+	  exit(-1);
+  }
 
   return (counter-1);
 }
@@ -362,11 +366,15 @@ int main(int argc, char** argv)
 
   while(line_counter<26)
     {
-      fgets (line, size_line, fp);
+	  if (fgets (line, size_line, fp) == NULL) {
+	  	  std::cerr << "error while reading file" << std::endl;
+	  }
       line_counter++;
     }
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%s", mapped);
   char str1[50] = "MAPPED";
 
@@ -396,18 +404,26 @@ int main(int argc, char** argv)
     perror("Parameters.txt not found in the specified directory");
     return(-1);
   }
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %f", &exec_time);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*c %f", &clk);
 
   N_clocks = exec_time*clk;
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*c %d", &Rows);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*c %d", &Columns);
 
   Size_Dist_vector = (Rows-1)+(Columns-1)+1;
@@ -469,21 +485,31 @@ int main(int argc, char** argv)
     return(-1);
   }
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*c %f", &config_freq);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*c %f", &Power_static);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*c %f", &Power_empty);
 
   initialise(&ALPHA, Power_static, config_freq, clk); //Power_empty,
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*c %f", &Power_static);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*c %f", &Power_empty);
 
   initialise(&ARM, Power_static, config_freq, clk); //Power_empty,
@@ -491,17 +517,25 @@ int main(int argc, char** argv)
   //fgets (line, size_line, fp);
   //sscanf( line, "%*s %*s %*s %*s %*c %d", &Number_in_out_Router);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*c %d", &Number_VC_per_input);
   //printf("Num of VC per input : %d\n",Number_VC_per_input);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*c %s", cpu_name);
  
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*c %d %d", &inst_complex_min, &inst_complex_max);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*c %d", &seed_mode);
 
 
@@ -517,9 +551,6 @@ int main(int argc, char** argv)
     }
    
   Power_static = library[lib]->stat_pow;
-   
-  //printf("CPU : %s\n",library[lib]->name);
-  //printf("Inst : %f\n",Power_dynamic);
 
   // Seed the grain for the pseudo-random number generator
   if(seed_mode)
@@ -532,7 +563,7 @@ int main(int argc, char** argv)
     }
 
 
-  // printf("Seed mode : %d \n",seed_mode);
+  //printf("Seed mode : %d \n",seed_mode);
 
   //*************************************************************************************************************//
   //*                                                                                                           *//
@@ -546,74 +577,118 @@ int main(int argc, char** argv)
     return(-1);
   }
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*c %d", &size_Labels);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*c %d", &Nb_banks_labels);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*c %d", &Nb_bits_read_out);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*s %*c %f", &Dynamic_energy_read_port_label);//nJ (per read port)
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*c %f", &Static_power_bank_label); //Watts
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*c %f", &Percentage_refresh_of_leakage);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*c %d", &size_WRB);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*c %d", &size_REB);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*c %d", &size_PRB);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*c %d", &Nb_banks_buffers);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*c %f", &Dynamic_energy_read_port_WRB);//nJ
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*c %f", &Dynamic_energy_read_port_REB);//nJ
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*c %f", &Dynamic_energy_read_port_PRB);//nJ
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*c %f", &Static_power_bank_WRB);//Watts
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*c %f", &Static_power_bank_REB);//Watts
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*c %f", &Static_power_bank_PRB);//Watts
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*c %d", &size_SB);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*c %d", &size_RB);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*c %f", &Dynamic_energy_read_port_RB_SB);//nJ Energy per read port (1 byte width)
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*s %*c %f", &Static_power_bank_RB_SB);//Watts
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*c %d", &Nb_bytes_per_instruction);
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %*s %*s %*s %*c %d", &Nb_bytes_offset);
   fclose(fp);
 
-  // Read Number of Runnables //
+  // Read Number of Runnables
   fp = fopen((inputFolder + "/OUTPUT_Execution_Report.log").c_str(), "r");
   if(fp == NULL) {
     perror("OUTPUT_Execution_Report.log not found in the specified directory");
@@ -622,10 +697,14 @@ int main(int argc, char** argv)
   line_counter = 0;
   while(line_counter<31)
     {
-      fgets (line, size_line, fp);
+	  if (fgets (line, size_line, fp) == NULL) {
+	  	  std::cerr << "error while reading file" << std::endl;
+	  }
       line_counter++;
     }
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf(line, "    %*s %*s %*s %*s %*s    %*s %d", &Nb_mult_occ_runnables);
 
   // Check to avoid allocating very large memory area
@@ -653,7 +732,10 @@ int main(int argc, char** argv)
   int max_size_runnable_name = 200; //Max size of a runnable name (in bytes)
 
   //Runnables_ID_Name
-  //The file OUTPUT_FILES/OUTPUT_RUNNABLE_IDs.csv is the list of Runnables with their IDs. The Runnables are listed without taking into account the periodicity : a periodic Runnable is listed so many times as it would be if its periodicity was 1. Runnables_ID_Name just copies this information from OUTPUT_RUNNABLE_IDs.csv.
+  //The file OUTPUT_FILES/OUTPUT_RUNNABLE_WAVE_IDs.csv is the list of Runnables with their IDs.
+  // The Runnables are listed without taking into account the periodicity :
+  //  a periodic Runnable is listed so many times as it would be if its periodicity was 1.
+  // Runnables_ID_Name just copies this information from OUTPUT_RUNNABLE_IDs.csv.
   char** Runnables_ID_Name;
   Runnables_ID_Name = (char**)calloc(Nb_mult_occ_runnables,sizeof(char *));
   for(i=0;i<Nb_mult_occ_runnables;i++)
@@ -668,16 +750,18 @@ int main(int argc, char** argv)
   eraser = (char*)calloc(max_size_runnable_name,sizeof(char));;
 
 #ifdef DEBUG
-  fprintf(stderr, "Parsing OUTPUT_RUNNABLE_IDs trace\n");
+  fprintf(stderr, "Parsing OUTPUT_RUNNABLE_WAVE_IDs trace\n");
 #endif
 
-  fp = fopen((inputFolder + "/OUTPUT_RUNNABLE_IDs.csv").c_str(), "r");
+  fp = fopen((inputFolder + "/OUTPUT_RUNNABLE_WAVE_IDs.csv").c_str(), "r");
   if (fp == NULL) {
-    perror("OUTPUT_RUNNABLE_IDs.csv not found in the specified directory");
+    perror("OUTPUT_RUNNABLE_WAVE_IDs.csv not found in the specified directory");
     return (-1);
   }
 
-  fgets(line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   while (fgets(line, size_line, fp) != NULL) {
     sscanf(line, "%d %*c %s", &runn_id_counter, Runnable_name);
     strcpy(Runnables_ID_Name[runn_id_counter], Runnable_name);
@@ -731,7 +815,9 @@ int main(int argc, char** argv)
   //*                                                                                                           *//
   //*************************************************************************************************************//
 
+#ifdef DEBUG
   fprintf(stderr, "Parsing Runnables.txt trace\n");
+#endif
 
   // Extract instruction information
   int Runn_idx = 0;
@@ -749,7 +835,9 @@ int main(int argc, char** argv)
   while(fgets (line, size_line, fp)!=NULL)
     {
       sscanf( line, "%s %s %d %d %d", Runnable_id, Runnable_name, &Nb_instructions, &Nb_Labels_accesses, &Nb_packets);
-      Runn_idx = Get_Runnable_idx(Runnables_Name_Idx,Runnable_name);
+      fprintf(stderr, "runnable name = %s\n", Runnable_name);
+      Runn_idx = Get_Runnable_idx(Runnables_Name_Idx,Runnable_name, Nb_runnables);
+      fprintf(stderr, "runnable name = %s has idx %d\n", Runnable_name, Runn_idx);
       Run_Idx[Runn_idx].Nb_instructions = Nb_instructions;
       Run_Idx[Runn_idx].Nb_label_accesses = Nb_Labels_accesses;
       Run_Idx[Runn_idx].Nb_packets = Nb_packets;
@@ -765,7 +853,9 @@ int main(int argc, char** argv)
   //*                                                                                                           *//
   //*************************************************************************************************************//
 
-  //fprintf(stderr, "Parsing noc trace\n");
+#ifdef DEBUG
+  fprintf(stderr, "Parsing noc trace\n");
+#endif
 
   // opening file for reading 
   fp = fopen((inputFolder + "/OUTPUT_NoC_Traces.csv").c_str(), "r");
@@ -775,7 +865,9 @@ int main(int argc, char** argv)
   }
 
   // Read each packet and compute distance travelled
-  fgets(line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   while (fgets(line, size_line, fp) != NULL) {
     int srcX, srcY, dstX, dstY, latency;
     sscanf(line,
@@ -821,13 +913,19 @@ int main(int argc, char** argv)
   // Read each packet and compute distance travelled  
   while(line_counter<7)
     {
-      fgets (line, size_line, fp);
+	  if (fgets (line, size_line, fp) == NULL) {
+	  	  std::cerr << "error while reading file" << std::endl;
+	  }
       line_counter++;
     }
 
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+  	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %f", &N_clk_flt_link);
-  fgets (line, size_line, fp);
+  if (fgets (line, size_line, fp) == NULL) {
+	  std::cerr << "error while reading file" << std::endl;
+  }
   sscanf( line, "%*s %*s %f", &N_clk_flt_router);
 
   //     printf("N_clocks_flit_link : %f\n",N_clk_flt_link);
@@ -915,7 +1013,7 @@ int main(int argc, char** argv)
       sscanf( line, "%s %*c %*d %*c %d %*c %d", Runnable_name, &label_data, &rd_or_wr); // For New
       //fprintf(stderr, "Runnable Name : %s\n",Runnable_name);
 	 
-      Runn_idx = Get_Runnable_idx(Runnables_Name_Idx,Runnable_name);
+      Runn_idx = Get_Runnable_idx(Runnables_Name_Idx,Runnable_name, Nb_runnables);
       packets = packets + Run_Idx[Runn_idx].Nb_packets;
 
     }

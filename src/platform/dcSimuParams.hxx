@@ -36,6 +36,9 @@ public:
 	unsigned long int getCoresFrequencyInHz() const;
 	unsigned long int getSimuEnd() const;
 	double getCoresPeriodInNano() const;
+	bool getUseMicroworkload() const;
+	unsigned int getMicroworkloadWidth() const;
+	unsigned int getMicroworkloadHeight() const;
 
 private:
 	std::string outputFolder;
@@ -59,6 +62,9 @@ private:
 	char* binary;
 	unsigned long int coresFrequencyInHz;
 	int seed;
+	bool useMicroworkload;
+	unsigned int microworkloadWidth;
+	unsigned int microworkloadHeight;
 };
 
 

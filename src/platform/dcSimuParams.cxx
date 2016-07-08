@@ -22,7 +22,7 @@ bool cmdOptionExists(char** begin, char** end, const std::string& option) {
 
 void dcSimuParams::printHelp() {
 	std::cerr << "usage is:" << std::endl << binary
-			<< " [-d] [-fd] [-h] [-np] [-r] [-ba] [-genRandomSeed seed] [-wekaFile file]\n"
+			<< " [-d] [-fd] [-h] [-mw] [-mww] [-mwh] [-np] [-r] [-ba] [-genRandomSeed seed] [-wekaFile file]\n"
 					"(-a app_file | -f mode_file)\n"
 					"-freq freq_in_hertz\n"
 			        "-simuEnd end_in_nano\n"
@@ -31,6 +31,18 @@ void dcSimuParams::printHelp() {
 					"-o output_folder\n"
 					"-s scheduling_strategy\n"
 					"-x rows -y cols" << std::endl;
+}
+
+bool dcSimuParams::getUseMicroworkload() const {
+	return useMicroworkload;
+}
+
+unsigned int dcSimuParams::getMicroworkloadWidth() const {
+	return microworkloadWidth;
+}
+
+unsigned int dcSimuParams::getMicroworkloadHeight() const {
+	return microworkloadHeight;
 }
 
 bool dcSimuParams::getHelp() {
@@ -147,6 +159,26 @@ dcSimuParams::dcSimuParams(int argc, char **argv) {
 		help = true;
 	} else {
 		help = false;
+	}
+
+	if (cmdOptionExists(argv, argv + argc, "-mw")) {
+		useMicroworkload = true;
+	} else {
+		useMicroworkload = false;
+	}
+
+	std::string mwwString = getCmdOption(argv, argv + argc, "-mww");
+	if (mwwString.empty()) {
+		microworkloadWidth = 2;
+	} else {
+		microworkloadWidth = std::stoi(mwwString);
+	}
+
+	std::string mwhString = getCmdOption(argv, argv + argc, "-mwh");
+	if (mwhString.empty()) {
+		microworkloadHeight = 2;
+	} else {
+		microworkloadHeight = std::stoi(mwhString);
 	}
 
 	if (cmdOptionExists(argv, argv + argc, "-np")) {

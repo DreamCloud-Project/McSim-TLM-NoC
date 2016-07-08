@@ -8,3 +8,5 @@
 // Number of bytes in a packet (considering a given flit size in bits, this also define the number of flits)
 #define PACKET_SIZE_IN_BYTES 32
 #define FLIT_SIZE_IN_BYTES 4
+
+#define TH_STACK_SIZE 65536

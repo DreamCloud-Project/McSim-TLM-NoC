@@ -24,7 +24,7 @@ FREQ_UNITS = {
 }
 
 APP_NAMES_TO_FILES = {
- 'DC'  : '/apps/DEMO_CAR/DemoCar-PowerUp.amxmi'
+    'DC'  : '/apps/DEMO_CAR/DemoCar-PowerUp.amxmi',
 }
 
 MAPPINGS = ['MinComm', 'Static', 'ZigZag', 'Random', 'StaticModes']
@@ -73,12 +73,15 @@ def main():
     parser = argparse.ArgumentParser(description='Abstract simulator runner script')
     parser.add_argument('-d', '--syntax_dependency', action='store_true', help='consider successive runnables in tasks call graph as dependent')
     appGroup = parser.add_mutually_exclusive_group()
-    appGroup.add_argument('-da', '--def_application', help='specify the application to be simulated among the default ones', choices=['DC'])
+    appGroup.add_argument('-da', '--def_application', help='specify the application to be simulated among the default ones', choices=APP_NAMES_TO_FILES.keys())
     appGroup.add_argument('-ca', '--custom_application', help='specify a custom application file to be simulated')
     parser.add_argument('-f', '--freq', help='specify the frequency of cores in the NoC (i.g 400MHz or 1GHz)', action=ValidateFreq)
     appGroup.add_argument('-mf', '--modes_file', help='specify a modes switching file to be simulated')
     parser.add_argument('-i', '--iterations', type=int, help='specify the number of application to execute (has no effect with -p)')
     parser.add_argument('-m', '--mapping_strategy', help='specify the mapping strategy used to map runnables on cores. Valide strategies are ' + str(MAPPINGS), nargs="+",  action=ValidateMapping)
+    parser.add_argument('-mw', '--micro_workload', action='store_true', help='simulate a micro workload of the application instead of the real application')
+    parser.add_argument('-mww', '--micro_workload_width', type=int, help='the width of the simulated micro workload. To be used with -mw only')
+    parser.add_argument('-mwh', '--micro_workload_height', type=int, help='the height of the simulated micro workload. To be used with -mw only')
     parser.add_argument('-np', '--no_periodicity', action='store_true', help='run periodic runnables only once')
     parser.add_argument('-nfd', '--no_full_duplex', action='store_true', help='don\'t use a full duplex NoC')
     parser.add_argument('-o', '--output_folder', help='specify the absolute path of the output folder where simulation results will be generated')
@@ -161,6 +164,14 @@ def main():
     	cmd.append(str(args.seed_random))
     if args.no_periodicity:
          cmd.append('-np')
+    if args.micro_workload:
+         cmd.append('-mw')
+         if args.micro_workload_width:
+             cmd.append('-mww')
+             cmd.append(str(args.micro_workload_width))
+         if args.micro_workload_height:
+             cmd.append('-mwh')
+             cmd.append(str(args.micro_workload_height))
     if args.built_in_analyses:
          cmd.append('-ba')
     if not args.no_full_duplex:
@@ -185,6 +196,11 @@ def main():
 
     # Run the energy estimator module
     cmd = [os.path.dirname(os.path.realpath(__file__)) + '/obj/energy_estimator', out, os.path.dirname(os.path.realpath(__file__)) + '/src/energy_estimator/']
+    if args.verbose:
+        cmdStr = ''
+        for s in cmd:
+            cmdStr = cmdStr + ' ' + s
+        print cmdStr
     nrj = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     stdout, stderr = nrj.communicate()
     if nrj.wait() != 0:

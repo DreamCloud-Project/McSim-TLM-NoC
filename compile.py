@@ -13,18 +13,21 @@ def main():
     parser.add_argument('-v',  '--verbose', action='store_true', help='enable verbose output')
     subparsers = parser.add_subparsers(title='valid subcommands', dest='command')
     parser_cp = subparsers.add_parser('build')
+    parser_cp.add_argument('-nc',  '--noClean', action='store_true', help='don\'t clean before compiling')
+    parser_cp.add_argument('-j',  '--jobs', type=int, help='perform parallel compilation using the specified number of threads')
     parser_cl = subparsers.add_parser('clean')
     args = parser.parse_args()
 
-    # Clean in all cases
-    print ('Cleaning')
+    # Clean if required
     work_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'obj')
-    if os.path.exists(work_dir):
-        shutil.rmtree(work_dir)
+    if args.command == 'clean' or not args.noClean:
+        print ('Cleaning')
+        if os.path.exists(work_dir):
+            shutil.rmtree(work_dir)
+        os.makedirs(work_dir)
 
     # Build if needed
     if args.command == 'build':
-        os.makedirs(work_dir)
         print ('Running cmake')
         cmd = ['cmake', '..']
         if not args.verbose:
@@ -38,6 +41,8 @@ def main():
         print ('cmake done')
         print ('Running make')
         cmd = ['make']
+        if args.jobs:
+            cmd.append('-j' + str(args.jobs))
         if not args.verbose:
              build = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=work_dir)
         else:

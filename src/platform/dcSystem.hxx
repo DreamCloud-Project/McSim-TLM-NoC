@@ -35,6 +35,7 @@
 #include "commons/parser/AmApplication.h"
 #include "commons/parser/dcAmaltheaParser.h"
 #include "commons/parser/dcApplication.h"
+#include "commons/microworkload/MicroWorkloadGenerator.hxx"
 
 namespace dreamcloud {
 namespace platform_sclib {
@@ -63,7 +64,8 @@ public:
 					"trReady", params_.getRows()), newPktFromPe("newPktFrompe",
 					params_.getRows()), newRunnable_event("newRunEvent",
 					params_.getRows()), nbRunnablesCompleted(0), nbRunnablesMapped(
-					0), nbPacketSendInNoc(0), nbpacketReceivedFromNoc(0), noc_(NULL) {
+					0), nbPacketSendInNoc(0), nbpacketReceivedFromNoc(0), noc_(
+					NULL) {
 
 		// Init sc_vectors second dimension
 		for (sc_vector<sc_vector<sc_signal<Packet> > >::size_type i = 0;
@@ -132,7 +134,7 @@ public:
 			runnableWaveIDs =
 					fopen(
 							(params.getOutputFolder()
-									+ "/OUTPUT_RUNNABLE_IDs.csv").c_str(),
+									+ "/OUTPUT_RUNNABLE_WAVE_IDs.csv").c_str(),
 							"w+");
 			fputs("ID , Runnable_Name , Task_Name\n", runnableWaveIDs);
 		}
@@ -233,6 +235,8 @@ public:
 				instructionsPerCycle =
 						iterator->second->GetInstructionsPerCycle();
 			}
+// NOTE: this check is commented out because some applications we need to support
+// do not satisfy this condition
 //				else {
 //				if (iterator->second->GetInstructionsPerCycle()
 //						!= instructionsPerCycle) {
@@ -249,9 +253,31 @@ public:
 		taskGraph = application->createGraph("dcTaskGraph");
 		application->CreateGraphEntities(taskGraph, amApplication,
 				params.getSeqDep());
+
+		// Use the application or generate a micro workload for it
+		if (params.getUseMicroworkload()) {
+			dcMwGenerator gen;
+			vector<dcTaskGraph*> workloads = gen.MwGenerate(taskGraph,
+					amApplication, params.getMicroworkloadWidth(), params.getMicroworkloadHeight(), 2);
+			int i = 0;
+			for (std::vector<dcTaskGraph*>::iterator it = workloads.begin();
+					it != workloads.end(); ++it) {
+				taskGraph = *it;
+			}
+		}
 		tasks = application->GetAllTasks(taskGraph);
 		labels = application->GetAllLabels(amApplication);
 		runnables = application->GetAllRunnables(taskGraph);
+
+		// Get the mapping between tasks and
+		vector<vector<dcRunnableCall *> > tasksToRunnables;
+		int nbRuns = 0;
+		for (std::vector<dcTask *>::size_type i = 0; i < tasks.size(); i++) {
+			vector<dcRunnableCall*> v = application->GetTaskRunnableCalls(taskGraph, tasks.at(i));
+			tasksToRunnables.push_back(v);
+		}
+
+		// Dump information about simulated application into files
 		application->dumpLabelAccesses(taskGraph, params.getOutputFolder());
 		application->dumpLabelAccessesPerRunnable(taskGraph,
 				params.getOutputFolder());
@@ -326,12 +352,6 @@ public:
 		cout << "    Parsing time: " << (t1 - t0) << " s" << endl << endl
 				<< endl;
 
-		vector<vector<dcRunnableCall *> > tasksToRunnables;
-		for (std::vector<dcTask *>::size_type i = 0; i < tasks.size(); i++) {
-			tasksToRunnables.push_back(
-					application->GetTaskRunnableCalls(taskGraph, tasks.at(i)));
-		}
-
 		if (params.getGenerateWaveforms()) {
 			int R_Index = 0;
 			for (std::vector<vector<dcRunnableCall *>>::size_type waveIndexT = 0;
@@ -357,7 +377,8 @@ public:
 		application->dumpTaskGraphFile(
 				params.getOutputFolder() + "/dcTasksGraphFile.gv", tasks);
 		application->dumpTaskAndRunnableGraphFile(
-				params.getOutputFolder() + "/dcTasksAndRunsGraphFile.gv", tasks);
+				params.getOutputFolder() + "/dcTasksAndRunsGraphFile.gv",
+				tasks);
 
 		// Initialize some signals
 		for (unsigned int row(0); row < params.getRows(); ++row) {
@@ -449,20 +470,24 @@ public:
 		sensitive << commOut;
 		dont_initialize();
 		SC_THREAD(runnablesMapper_thread);
+		set_stack_size(TH_STACK_SIZE);
 		sensitive << runnableReleased_event;
 		SC_THREAD(stopSimu_thread);
+		set_stack_size(TH_STACK_SIZE);
 		sensitive << stopSimu_event;
 		dont_initialize();
 		SC_METHOD(dependentRunnablesReleaser_method);
 		sensitive << runnableCompleted_event;
 		dont_initialize();
 		SC_THREAD(periodicRunnablesReleaser_thread);
+		set_stack_size(TH_STACK_SIZE);
 		SC_METHOD(nonPeriodicIndependentRunnablesReleaser_method);
 		sensitive << iteration_event;
 
 		// Start mode switching thread if required
 		if (simulationEndFromMode != 0) {
 			SC_THREAD(modeSwitcher_thread);
+			set_stack_size(TH_STACK_SIZE);
 		} else {
 			SC_METHOD(labelsMapper_method);
 		}
@@ -531,7 +556,6 @@ private:
 	vector<mode_t> modes;
 	unsigned long int simulationEndFromMode = 0;
 	unsigned long int simulationEndFromCmdLine;
-
 
 	// Communication medium interface
 	sc_buffer<Packet> commIn;

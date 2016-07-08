@@ -102,11 +102,13 @@ public:
 
 		// Inits SystemC processes
 		SC_THREAD(pktSender_thread);
+		set_stack_size(TH_STACK_SIZE);
 		sensitive << sendPacket_event;
 		SC_METHOD(pktReceiver_method);
 		sensitive << packet_in;
 		dont_initialize();
 		SC_THREAD(runnableExecuter_thread);
+		set_stack_size(TH_STACK_SIZE);
 
 		// Inits the generator for deviation instructions
 		int seed;
