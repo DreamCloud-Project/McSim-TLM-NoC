@@ -259,7 +259,6 @@ public:
 			dcMwGenerator gen;
 			vector<dcTaskGraph*> workloads = gen.MwGenerate(taskGraph,
 					amApplication, params.getMicroworkloadWidth(), params.getMicroworkloadHeight(), 2);
-			int i = 0;
 			for (std::vector<dcTaskGraph*>::iterator it = workloads.begin();
 					it != workloads.end(); ++it) {
 				taskGraph = *it;
