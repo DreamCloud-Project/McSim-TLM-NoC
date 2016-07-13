@@ -49,8 +49,9 @@ with all these parameters which documentation is the following:
 >> ./simulate.py --help
 usage: simulate.py [-h] [-d] [-da {DC}] [-ca CUSTOM_APPLICATION] [-f FREQ]
                    [-mf MODES_FILE] [-i ITERATIONS]
-                   [-m MAPPING_STRATEGY [MAPPING_STRATEGY ...]] [-np] [-nfd]
-                   [-o OUTPUT_FOLDER] [-r] [-seed SEED_RANDOM]
+                   [-m MAPPING_STRATEGY [MAPPING_STRATEGY ...]] [-mw]
+                   [-mww MICRO_WORKLOAD_WIDTH] [-mwh MICRO_WORKLOAD_HEIGHT]
+                   [-np] [-nfd] [-o OUTPUT_FOLDER] [-r] [-seed SEED_RANDOM]
                    [-s {fcfs,prio}] [-v] [-x ROWS] [-y COLS] [-ba]
 
 Abstract simulator runner script
@@ -76,6 +77,15 @@ optional arguments:
                         specify the mapping strategy used to map runnables on
                         cores. Valide strategies are ['MinComm', 'Static',
                         'ZigZag', 'Random', 'StaticModes']
+  -mw, --micro_workload
+                        simulate a micro workload of the application instead
+                        of the real application
+  -mww MICRO_WORKLOAD_WIDTH, --micro_workload_width MICRO_WORKLOAD_WIDTH
+                        the width of the simulated micro workload. To be used
+                        with -mw only
+  -mwh MICRO_WORKLOAD_HEIGHT, --micro_workload_height MICRO_WORKLOAD_HEIGHT
+                        the height of the simulated micro workload. To be used
+                        with -mw only
   -np, --no_periodicity
                         run periodic runnables only once
   -nfd, --no_full_duplex
