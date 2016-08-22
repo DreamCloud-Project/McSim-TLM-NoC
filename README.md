@@ -16,6 +16,8 @@ The requirements for using these scripts are the following ones:
 
 - have CMake installed on your system [(https://cmake.org)](https://cmake.org/)
 - define the SYSTEMC_HOME variable pointing to a SystemC 2.3.1 root folder
+    - Download SystemC from here http://accellera.org/downloads/standards/systemc/systemc-license-agreement
+    - 
 - have the xerces-c-dev library installed in standard includes and libs folders (using apt-get for example)
   or have xerces-c-dev library in a custom folder and define XERCES_HOME
 
