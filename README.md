@@ -17,10 +17,12 @@ The requirements for using these scripts are the following ones:
 - have a Linux system
 - have a C++ compiler
 - have CMake installed on your system [(https://cmake.org)](https://cmake.org/)
-- define the SYSTEMC_HOME variable pointing to a SystemC 2.3.1 root folder
-    * Download SystemC (Core SystemC Language and Examples) from here http://accellera.org/downloads/standards/systemc/systemc-license-agreement
+- have SystemC 2.3.1
+    * download SystemC (Core SystemC Language and Examples) from here http://accellera.org/downloads/standards/systemc/systemc-license-agreement
+    * decompress the archive
     * run 'configure' and then make install' 
-    * define the SYSTEMC_HOME variable
+    * you should see a new 'include' folder and a new 'lib-linux64' folder in your root folder of SystemC 
+    * define the SYSTEMC_HOME variable to the root folder of SystemC 
 - have the xerces-c-dev library installed in standard includes and libs folders (using 'apt-get install libxerces-c-dev' for example on Ubuntu)
   or have xerces-c-dev library in a custom folder and define XERCES_HOME
 
