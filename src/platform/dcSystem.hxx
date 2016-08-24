@@ -7,6 +7,9 @@
 #ifndef DREAMCLOUD__PLATFORM_SCLIB__DCSYSTEM_HXX
 #define DREAMCLOUD__PLATFORM_SCLIB__DCSYSTEM_HXX
 
+// Uncomment for building in debug mode
+//#define DEBUG_SIMU
+
 ////////////////////
 //    INCLUDES    //
 ////////////////////

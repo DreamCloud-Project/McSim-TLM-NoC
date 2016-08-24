@@ -33,6 +33,11 @@ void dcSystem::dependentRunnablesReleaser_method() {
 					i != pe->completedRunInstances.end(); ++i) {
 				completedRunInstances.push_back(*i);
 				nbRunnablesCompleted++;
+
+#ifdef DEBUG_SIMU
+				cout << nbRunnablesCompleted << " runnables completed on a total of " <<
+						nbRunnablesMapped << " runnables mapped" << endl;
+#endif
 			}
 		}
 	}
@@ -443,6 +448,10 @@ void dcSystem::runnablesMapper_thread() {
 					<< readyRunnables.front()->getRunCall()->GetRunClassName()
 					<< "," << x << y << endl;
 			nbRunnablesMapped++;
+#ifdef DEBUG_SIMU
+			cout << nbRunnablesMapped << " runnables mapped: " <<
+					readyRunnables.front()->getRunCall()->GetRunClassName() << endl;
+#endif
 			readyRunnables.front()->SetMappingTime(sc_time_stamp().value());
 			pes[x][y]->newRunnable = readyRunnables.front();
 			pes[x][y]->newRunnableSignal = true;
