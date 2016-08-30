@@ -7,7 +7,7 @@
 #include <string>
 #include <iostream>
 
-#define DEBUG 1
+//#define DEBUG 1
 
 //inst_complex_min and inst_complex_max must lie between 0 and 9 (inclusively)
 int Select_complexity_inst(int inst_complex_min, int inst_complex_max)
@@ -846,6 +846,9 @@ int main(int argc, char** argv)
   fclose(fp);
   strcpy(Runnable_name,eraser); //clean the Runnable_name buffer;
 
+#ifdef DEBUG
+  fprintf(stderr, "Parsing Runnables.txt trace DONE\n");
+#endif
 
   //*************************************************************************************************************//
   //*                                                                                                           *//
@@ -886,6 +889,13 @@ int main(int argc, char** argv)
   }
   fclose(fp);
 
+#ifdef DEBUG
+  fprintf(stderr, "Parsing noc trace DONE\n");
+#endif
+
+#ifdef DEBUG
+  fprintf(stderr, "Computing noc trace\n");
+#endif
   // Compute the overall number of remote messages 
   for(i=1;i<Size_Dist_vector;i=i+1)
     {
@@ -894,14 +904,13 @@ int main(int argc, char** argv)
 
   Mean_duration_packet = Duration_packet/N_mesg; // Average packet latency 
   Mean_duration_flit = Duration_flit_hop/N_mesg; // Average flit latency 
-  // Debug 
-  //printf("N_clk_flt : %f\n",N_clk_flt);
-  //printf("Mean_duration_packet : %f\n",Mean_duration_packet);
-  //printf("Mean_duration_flit_hop : %f\n",Mean_duration_flit);
-  //printf("N_mesg : %d\n",N_mesg);
-  // End Debug 
-
+#ifdef DEBUG
+  fprintf(stderr, "Computing noc trace DONE\n");
+#endif
     
+#ifdef DEBUG
+  fprintf(stderr, "Parsing dcConfiguration.hxx\n");
+#endif
   // opening file for reading the values of N_clk_flt_link and N_clk_flt_router
   fp = fopen((configFolder + "/../platform/dcConfiguration.hxx").c_str() , "r");
   if(fp == NULL) {
@@ -932,7 +941,9 @@ int main(int argc, char** argv)
   //     printf("N_clocks_flit_router : %f\n",N_clk_flt_router);
   line_counter = 0;
   fclose(fp);
-
+#ifdef DEBUG
+  fprintf(stderr, "Parsing dcConfiguration.hxx DONE\n");
+#endif
 
   //Compute total energy consumed by the NoC
   //Routers with 5 inputs
@@ -953,6 +964,9 @@ int main(int argc, char** argv)
   //*                                                                                                           *//
   //*************************************************************************************************************//
 
+#ifdef DEBUG
+  fprintf(stderr, "Parsing Instruction_fixed_Power.txt 1\n");
+#endif
   // Read Instruction Lengths 
   fp = fopen((inputFolder + "/Instruction_fixed_Power.txt").c_str(), "r");
   if(fp == NULL) {
@@ -975,8 +989,24 @@ int main(int argc, char** argv)
       Time_ins = Time_ins+Ins_length;
     }
   fclose(fp);
-  Complexity_mean= Complexity_mean/inst_count;
-  Power_dynamic_mean = ((library[lib]->table_complex_pow)[(int)(Complexity_mean)-1]);;
+#ifdef DEBUG
+  fprintf(stderr, "Parsing Instruction_fixed_Power.txt 1 DONE\n");
+#endif
+
+#ifdef DEBUG
+  fprintf(stderr, "Computing complexity_mean with inst_count = %d\n", inst_count);
+#endif
+  if (inst_count != 0) {
+  	Complexity_mean= Complexity_mean/inst_count;
+  	Power_dynamic_mean = ((library[lib]->table_complex_pow)[(int)(Complexity_mean)-1]);
+  } else {
+	  Complexity_mean = 0;
+	  Power_dynamic_mean = 0;
+  }
+#ifdef DEBUG
+  fprintf(stderr, "Computing complexity_mean DONE\n");
+#endif
+
   // Compute total number of messages (local or remote) and compute the energy consumed 
   /*
     fp = fopen("./Label_accesses_Power.txt" , "r");
@@ -1000,6 +1030,10 @@ int main(int argc, char** argv)
 
   */
 
+
+#ifdef DEBUG
+  fprintf(stderr, "Parsing Instruction_fixed_Power.txt 2\n");
+#endif
   // Determine the theoretical number of packets
   // Go through the list of all recorded executed Runnables and determine the theoretical total number of packets
   fp = fopen((inputFolder + "/Instruction_fixed_Power.txt").c_str() , "r");
@@ -1017,6 +1051,11 @@ int main(int argc, char** argv)
       packets = packets + Run_Idx[Runn_idx].Nb_packets;
 
     }
+  fclose(fp);
+#ifdef DEBUG
+  fprintf(stderr, "Parsing Instruction_fixed_Power.txt 2 DONE\n");
+#endif
+
   total_flits = packets*N_flt_pack;//Use label set (local or remote)
   remote_flits = N_mesg*N_flt_pack; //Additionally use RB and SB 
     
